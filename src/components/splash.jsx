@@ -3,7 +3,6 @@ const splash = () => {
         <>
             <p>Hi!</p> 
             <p>I'm Alex Hiller.</p>
-            test
         </>
     )
 }
