@@ -2,7 +2,7 @@ const feedback = () => {
 
     return (
         <>
-            <form onSubmit = {null}>
+            <form action="mailto:asonnyhiller@gmail.com">
                 <label>
                     Email:
                     <input type="text" name="name" />
