@@ -5,9 +5,133 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(205, 203, 203); 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.outerBar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  background: #6031b7;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  z-index: 10;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+
+.navbutton {
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  text-align: center;
+}
+
+.navbutton:hover {
+  background: #3c1f73;
+  cursor: pointer;
+}
+
+.navbutton a{
+  text-decoration: none;
+}
+
+.navbutton a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.splashbox {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  background: #1b2b88;
+  color: white;
+  padding: 2%;
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+
+.skillbox {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: #1b2b88;
+  color: white;
+  padding: 2%;
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+
+.skillheader {
+  border: solid black 1px;
+  padding: 0.33%;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  width: 18%;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.skillchild1 {
+  display: none;
+  list-style-type: none;
+}
+
+.skillchild3 {
+  display: none;
+  list-style-type: none;
+}
+
+.skillchild4 {
+  display: none;
+  list-style-type: none;
+}
+
+.skillchild5 {
+  display: none;
+  list-style-type: none;
+}
+
+.skillheader:hover {
+  cursor:pointer;
+}
+
+#skillheader1:hover ~ .skillchild1 {
+  display: block;
+}
+
+#skillheader2:hover ~ .skillchild3 {
+  display: block;
+}
+
+#skillheader3:hover ~ .skillchild4 {
+  display: block;
+}
+
+#skillheader4:hover ~ .skillchild5 {
+  display: block;
 }

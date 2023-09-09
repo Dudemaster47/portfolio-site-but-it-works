@@ -1,7 +1,7 @@
 function Feedback () {
 
     return (
-        <>
+        <div class="splashbox">
             <form action="mailto:asonnyhiller@gmail.com">
                 <label>
                     Email:
@@ -13,7 +13,7 @@ function Feedback () {
                 </label>
                 <input type="submit" value="Submit" />
             </form>
-        </>
+        </div>
     )
 
 }
