@@ -6,32 +6,32 @@ const nav = () => {
         <nav>
             <ul>
                 <li>
-                    <NavLink>
+                    <NavLink to='/' exact={true}>
                     Top
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink>
+                    <NavLink to='/aboutme' exact={true}>
                     About Me
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink>
+                    <NavLink to='/skills' exact={true}>
                     Skills
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink>
+                    <NavLink to='/projects' exact={true}>
                     Projects
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink>
+                    <NavLink to='/socials' exact={true}>
                     Socials
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink>
+                    <NavLink to='/feedback' exact={true}>
                     Contact Me!
                     </NavLink>
                 </li>

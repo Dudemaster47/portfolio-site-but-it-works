@@ -21,7 +21,7 @@ function App() {
         <Route path="/feedback">
           <feedback />
         </Route>
-        <Route path="/project_links">
+        <Route path="/projects">
           <project_links />
         </Route>
         <Route path="/skills">
