@@ -1,39 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import nav from './components/nav';
-import about_me from './components/about_me';
-import feedback from './components/feedback';
-import project_links from './components/project_links';
-import skills from './components/skills';
-import socials from './components/socials';
-import splash from './components/splash';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Nav from './components/nav';
+import AboutMe from './components/about_me';
+import Feedback from './components/feedback';
+import ProjectLinks from './components/project_links';
+import Skills from './components/skills';
+import Socials from './components/socials';
+import Splash from './components/splash';
 
 function App() {
   return (
     <BrowserRouter>
-      <nav />
-      <Switch>
-        <Route path="/aboutme">
-          <about_me />
-        </Route>
-        <Route path="/feedback">
-          <feedback />
-        </Route>
-        <Route path="/projects">
-          <project_links />
-        </Route>
-        <Route path="/skills">
-          <skills />
-        </Route>
-        <Route path="/socials">
-          <socials />
-        </Route>
-        <Route path="/">
-          <splash />
-        </Route>
-      </Switch>
+      <Nav />
+      <Routes>
+        <Route path="/aboutme" element={<AboutMe />}/>
+        <Route path="/feedback" element={<Feedback />} />
+        <Route path="/projects" element={<ProjectLinks />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/socials" element={<Socials />} />
+        <Route exact path="/" element={<Splash />} />
+      </Routes>
     </BrowserRouter>
   );
 }

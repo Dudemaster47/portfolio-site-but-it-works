@@ -1,4 +1,4 @@
-const skills = () => {
+function Skills(){
 
     return (
         <>
@@ -50,4 +50,4 @@ const skills = () => {
     )
 }
 
-export default skills;
+export default Skills;

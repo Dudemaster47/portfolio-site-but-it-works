@@ -1,5 +1,4 @@
-const about_me = () => {
-
+function AboutMe(){
     return (
         <>
             <p>I'm an artist, a writer, a musician, a scientist, and a programmer.</p>
@@ -11,4 +10,4 @@ const about_me = () => {
 
 }
 
-export default about_me;
+export default AboutMe;

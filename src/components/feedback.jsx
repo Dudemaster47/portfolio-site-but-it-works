@@ -1,4 +1,4 @@
-const feedback = () => {
+function Feedback () {
 
     return (
         <>
@@ -18,4 +18,4 @@ const feedback = () => {
 
 }
 
-export default feedback;
+export default Feedback;

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const socials = () => {
+function Socials() {
 
     return (
         <>
@@ -20,4 +20,4 @@ const socials = () => {
 
 }
 
-export default socials;
+export default Socials;

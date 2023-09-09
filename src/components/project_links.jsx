@@ -1,5 +1,5 @@
-const project_links = () => {
+function ProjectLinks() {
 
 }
 
-export default project_links;
+export default ProjectLinks;

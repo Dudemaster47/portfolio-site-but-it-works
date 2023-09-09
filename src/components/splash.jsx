@@ -1,4 +1,4 @@
-const splash = () => {
+function Splash(){
     return (
         <>
             <p>Hi!</p> 
@@ -7,4 +7,4 @@ const splash = () => {
     )
 }
 
-export default splash;
+export default Splash;
