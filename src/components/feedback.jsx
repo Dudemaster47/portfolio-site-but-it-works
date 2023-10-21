@@ -1,17 +1,98 @@
+import { useState } from "react";
+import axios from 'axios';
+import $ from "jquery";
+
+const API_PATH = 'http://localhost:1992/portfolio/PHP/server.php';
+
 function Feedback () {
 
+    //email might be potentially dangerous
+    //it might be wiser to have an admin only comments database that stores this stuff as something other than plaintext to avoid security breaches
+    //and have it alert me when a comment is made
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [comment, setComment] = useState("");
+    const [mailSent, setMailSent] = useState(false)
+    const [errors, setErrors] = useState(null);
+
+    const handleNameChange = (e) => {
+        setName(e.target.value);
+    }
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handleCommentChange = (e) => {
+        setComment(e.target.textcontent);
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = $(e.target);
+        console.log(form)
+        axios({
+            method: 'post',
+            url: `${API_PATH}`,
+            headers: { 'content-type': 'application/json' },
+            data: form.serialize()
+        }).then(
+            setMailSent(true)
+        )
+        .catch(error => setErrors({ error: error.message }));
+    };
+    
+
     return (
-        <div class="splashbox">
-            <form action="mailto:asonnyhiller@gmail.com">
-                <label>
-                    Email:
-                    <input type="text" name="name" />
-                </label>
-                <label>
-                    Comment:
-                    <textarea name="comment" rows="5" cols="33" />
-                </label>
-                <input type="submit" value="Submit" />
+        
+        <div className="splashbox">
+            <form
+                action="#"
+                method="post"
+                onSubmit={(event) => handleSubmit(event)}
+            >
+                <label htmlFor="name">Name: </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={name}
+                    onChange={(event) =>
+                        handleNameChange(event)
+                    }
+                />
+                <label htmlFor="email">Email: </label>
+                <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(event) =>
+                        handleEmailChange(event)
+                    }
+                />
+                <br />
+                <label htmlFor="comment">Comment:</label>
+                <textarea 
+                    name="comment" 
+                    rows="5" 
+                    cols="33" 
+                    id="comment"
+                    textcontent = {comment}
+                    onChange={(event) => 
+                        handleCommentChange(event)
+                        }
+                />
+                <button type="submit">Submit</button>
+                <div>
+                    {mailSent && 
+                    <div>Thank you for contacting me!</div>}
+                </div>
+                <div>
+                    {errors &&
+                    <div>{errors}</div>}
+                </div>
             </form>
         </div>
     )

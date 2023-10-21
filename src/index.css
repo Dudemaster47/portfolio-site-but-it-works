@@ -96,42 +96,42 @@ a {
   box-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
-.skillchild1 {
-  display: none;
-  list-style-type: none;
+.skillbox ul { 
+  max-width: max-content;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1.5s;
 }
 
-.skillchild3 {
-  display: none;
-  list-style-type: none;
-}
-
-.skillchild4 {
-  display: none;
-  list-style-type: none;
-}
-
-.skillchild5 {
-  display: none;
-  list-style-type: none;
+.skillbox ul li {
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .01em;
 }
 
 .skillheader:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
-#skillheader1:hover ~ .skillchild1 {
-  display: block;
+.skillheader:hover + ul {
+  max-height: 250px;
 }
 
-#skillheader2:hover ~ .skillchild3 {
-  display: block;
+.skillheader:hover + ul li {
+  animation: type 2s steps(100, end);
 }
 
-#skillheader3:hover ~ .skillchild4 {
-  display: block;
+@keyframes type{
+  from {width: 0}
+  to {width: 100%}
 }
 
-#skillheader4:hover ~ .skillchild5 {
-  display: block;
+.commentForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitButton {
+  width: 10%;
 }
