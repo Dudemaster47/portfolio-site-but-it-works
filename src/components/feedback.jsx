@@ -9,11 +9,12 @@ function Feedback () {
     //email might be potentially dangerous
     //it might be wiser to have an admin only comments database that stores this stuff as something other than plaintext to avoid security breaches
     //and have it alert me when a comment is made
+    // this is a promise to myself to acutally code today
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [comment, setComment] = useState("");
-    const [mailSent, setMailSent] = useState(false)
+    const [sent, setSent] = useState(false)
     const [errors, setErrors] = useState(null);
 
     const handleNameChange = (e) => {
@@ -37,10 +38,10 @@ function Feedback () {
             url: `${API_PATH}`,
             headers: { 'content-type': 'application/json' },
             data: form.serialize()
-        }).then(
-            setMailSent(true)
+        }).then(result =>
+            setSent(result.sent)
         )
-        .catch(error => setErrors({ error: error.message }));
+        .catch(errors => setErrors("Something Went Wrong"));
     };
     
 
@@ -86,7 +87,7 @@ function Feedback () {
                 />
                 <button type="submit">Submit</button>
                 <div>
-                    {mailSent && 
+                    {sent && 
                     <div>Thank you for contacting me!</div>}
                 </div>
                 <div>
