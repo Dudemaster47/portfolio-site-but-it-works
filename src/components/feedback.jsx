@@ -10,7 +10,7 @@ function Feedback () {
     //it might be wiser to have an admin only comments database that stores this stuff as something other than plaintext to avoid security breaches
     //and have it alert me when a comment is made
     // this is a promise to myself to acutally code today
-
+    // this is another promise to actually code
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [comment, setComment] = useState("");
