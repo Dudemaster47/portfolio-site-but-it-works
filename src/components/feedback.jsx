@@ -1,8 +1,4 @@
 import { useState } from "react";
-import axios from 'axios';
-import $ from "jquery";
-
-const API_PATH = 'http://localhost:1992/portfolio/PHP/server.php';
 
 function Feedback () {
 
@@ -14,8 +10,6 @@ function Feedback () {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [comment, setComment] = useState("");
-    const [sent, setSent] = useState(false)
-    const [errors, setErrors] = useState(null);
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -32,16 +26,6 @@ function Feedback () {
     const handleSubmit = (e) => {
         e.preventDefault();
         const form = $(e.target);
-        console.log(form)
-        axios({
-            method: 'post',
-            url: `${API_PATH}`,
-            headers: { 'content-type': 'application/json' },
-            data: form.serialize()
-        }).then(result =>
-            setSent(result.sent)
-        )
-        .catch(errors => setErrors("Something Went Wrong"));
     };
     
 
@@ -86,14 +70,6 @@ function Feedback () {
                         }
                 />
                 <button type="submit">Submit</button>
-                <div>
-                    {sent && 
-                    <div>Thank you for contacting me!</div>}
-                </div>
-                <div>
-                    {errors &&
-                    <div>{errors}</div>}
-                </div>
             </form>
         </div>
     )
