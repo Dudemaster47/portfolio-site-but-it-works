@@ -27,6 +27,7 @@ export const Feedback = () => {
             <form
                 ref={form}
                 onSubmit={sendEmail}
+                className="commentForm"
             >
                 <label htmlFor="name">Name: </label>
                 <input
@@ -45,7 +46,7 @@ export const Feedback = () => {
                     rows="5"
                     cols="33"
                 />
-                <input type="submit" value="Send" />
+                <input type="submit" value="Send" className="submitButton"/>
             </form>
         </div>
     );

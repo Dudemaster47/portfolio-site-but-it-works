@@ -130,8 +130,10 @@ a {
 .commentForm {
   display: flex;
   flex-direction: column;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .submitButton {
-  width: 10%;
+  width: 20%;
 }
