@@ -3,7 +3,7 @@ import React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Nav from './components/nav';
 import AboutMe from './components/about_me';
-import Feedback from './components/feedback';
+import {Feedback} from './components/feedback';
 import ProjectLinks from './components/project_links';
 import Skills from './components/skills';
 import Socials from './components/socials';

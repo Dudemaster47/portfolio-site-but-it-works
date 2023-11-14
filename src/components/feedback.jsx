@@ -1,79 +1,52 @@
-import { useState } from "react";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
-function Feedback () {
+export const Feedback = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('contact_service', 'template_a7efzwo',form.current,'upzXRB1xcGlkey4qB')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     //email might be potentially dangerous
     //it might be wiser to have an admin only comments database that stores this stuff as something other than plaintext to avoid security breaches
     //and have it alert me when a comment is made
     // this is a promise to myself to acutally code today
     // this is another promise to actually code
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [comment, setComment] = useState("");
-
-    const handleNameChange = (e) => {
-        setName(e.target.value);
-    }
-
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
-
-    const handleCommentChange = (e) => {
-        setComment(e.target.textcontent);
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const form = $(e.target);
-    };
     
-
     return (
         
         <div className="splashbox">
             <form
-                action="#"
-                method="post"
-                onSubmit={(event) => handleSubmit(event)}
+                ref={form}
+                onSubmit={sendEmail}
             >
                 <label htmlFor="name">Name: </label>
                 <input
                     type="text"
-                    id="name"
-                    name="name"
-                    value={name}
-                    onChange={(event) =>
-                        handleNameChange(event)
-                    }
+                    name="user_name"
                 />
                 <label htmlFor="email">Email: </label>
                 <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={(event) =>
-                        handleEmailChange(event)
-                    }
+                    type="email"
+                    name="user_email"
                 />
                 <br />
-                <label htmlFor="comment">Comment:</label>
-                <textarea 
-                    name="comment" 
-                    rows="5" 
-                    cols="33" 
-                    id="comment"
-                    textcontent = {comment}
-                    onChange={(event) => 
-                        handleCommentChange(event)
-                        }
+                <label htmlFor="message">Message:</label>
+                <textarea
+                    name="message"
+                    rows="5"
+                    cols="33"
                 />
-                <button type="submit">Submit</button>
+                <input type="submit" value="Send" />
             </form>
         </div>
-    )
-
-}
-
-export default Feedback;
+    );
+};
