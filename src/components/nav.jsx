@@ -1,18 +1,38 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import githubLogo from '../images/github.png'
 import linkedinLogo from '../images/linkedin.png'
 import wellfoundLogo from '../images/Wellfound.png'
 
 function Nav() {
-    const [isActive1, setIsActive1] = useState(true);
+    const [isActive1, setIsActive1] = useState(false);
     const [isActive2, setIsActive2] = useState(false);
     const [isActive3, setIsActive3] = useState(false);
     const [isActive4, setIsActive4] = useState(false);
     const [isActive5, setIsActive5] = useState(false);
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        switch (window.location.pathname){
+            case '/aboutme':
+                setIsActive2(true);
+                break;
+            case '/skills':
+                setIsActive3(true);
+                break;
+            case '/projects':
+                setIsActive4(true);
+                break;
+            case '/feedback':
+                setIsActive5(true);
+                break;
+            default:
+                setIsActive1(true);
+                break;
+        }
+    })
 
     const clickHandler1 = (e) => {
         e.preventDefault();
@@ -67,32 +87,32 @@ function Nav() {
     return (
         <nav className="outerbar">
             <ul className="navbar">
-                <li className={isActive1 ? "activeNavbutton" : "navbutton"} onClick={clickHandler1}>
+                <li id="A" className={isActive1 ? "activeNavbutton" : "navbutton"} onClick={clickHandler1}>
                     <NavLink to='/' exact={true} activeClassName='active'>
                     Home
                     </NavLink>
                 </li>
-                <li className={isActive2 ? "activeNavbutton" : "navbutton"} onClick={clickHandler2}>
+                <li id="B" className={isActive2 ? "activeNavbutton" : "navbutton"} onClick={clickHandler2}>
                     <NavLink to='/aboutme' exact={true} activeClassName='active'>
                     About Me
                     </NavLink>
                 </li>
-                <li className={isActive3 ? "activeNavbutton" : "navbutton"} onClick={clickHandler3}>
+                <li id="C" className={isActive3 ? "activeNavbutton" : "navbutton"} onClick={clickHandler3}>
                     <NavLink to='/skills' exact={true} activeClassName='active'>
                     Skills
                     </NavLink>
                 </li>
-                <li className={isActive4 ? "activeNavbutton" : "navbutton"} onClick={clickHandler4}>
+                <li id="D" className={isActive4 ? "activeNavbutton" : "navbutton"} onClick={clickHandler4}>
                     <NavLink to='/projects' exact={true} activeClassName='active'> 
                     Projects
                     </NavLink>
                 </li>
-                <li className={isActive5 ? "activeNavbutton" : "navbutton"} onClick={clickHandler5}>
+                <li id="E" className={isActive5 ? "activeNavbutton" : "navbutton"} onClick={clickHandler5}>
                     <NavLink to='/feedback' exact={true} activeClassName='active'>
                     Contact Me!
                     </NavLink>
                 </li>
-                <li className="navbutton2">
+                <li id="F" className="navbutton2">
                     <ul className="socialList">
                         <li className="socialIcon">
                             <a href="https://www.linkedin.com/in/alex-hiller-422baa163/">

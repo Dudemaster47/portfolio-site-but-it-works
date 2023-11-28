@@ -201,6 +201,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
 }
 
 .linklistRow2 {
@@ -209,10 +211,12 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
 }
 
 .linkbox {
-  margin-top: 5%;
+  margin-top: 3%;
   background: #32717f;
   color: white;
   padding: 2%;
@@ -221,6 +225,21 @@ a {
   text-align: center;
   border-radius: 25px;
   box-shadow: 0px 5px 5px rgb(0, 0, 0);
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 350ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .linkbox:hover {

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 function Splash(){
+    const listItems1 = [<Link to='/aboutme' exact={true}><h1>About Me</h1></Link>, <Link to='/skills' exact={true}><h1>Skills</h1></Link>, <Link to='/projects' exact={true}><h1>Projects</h1></Link>]
+    const listItems2 = [<Link><h1>Resume</h1></Link>, <Link to='/feedback' exact={true}><h1>Contact Me</h1></Link>]
     return (
         <>
             <div className="headerbox">
@@ -14,25 +16,16 @@ function Splash(){
                 </div>
             </div>
             <div className="linklist">
-                <div className="linklistRow1">
-                    <div className="linkbox">
-                        <Link to='/aboutme' exact={true}><h2>About Me</h2></Link>
-                    </div>
-                    <div className="linkbox">
-                        <Link to='/skills' exact={true}><h2>Skills</h2></Link>
-                    </div>
-                    <div className="linkbox">
-                        <Link to='/projects' exact={true}><h2>Projects</h2></Link>
-                    </div>
-                </div>
-                <div className="linklistRow2">
-                    <div className="linkbox">
-                        <Link><h2>Resume</h2></Link>
-                    </div>
-                    <div className="linkbox">
-                        <Link to='/feedback' exact={true}><h2>Contact Me</h2></Link>
-                    </div>
-                </div>
+                <ul className="linklistRow1">
+                    {listItems1.map((item, idx) => (
+                    <li className="linkbox" id={idx} key={idx} style={{ animationDelay: `${175 * idx}ms` }}>{item}</li>
+                    ))}
+                </ul>
+                <ul className="linklistRow2">
+                    {listItems2.map((item, idx) => (
+                    <li className="linkbox" id={`${idx}A`} key={`${idx}A`} style={{ animationDelay: `${175 * (idx+1)}ms` }}>{item}</li>
+                    ))}
+                </ul>
             </div>
         </>
     )
