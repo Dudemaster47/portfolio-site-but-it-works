@@ -182,6 +182,11 @@ a {
   height: 30px;
 }
 
+.socialIcon:hover {
+  background: white;
+  border-radius: 16px;
+}
+
 .socialIcon a {
   width: auto;
   height: auto;
@@ -190,6 +195,16 @@ a {
 .logoImg {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  mask-image: linear-gradient(45deg,#ffffff 25%,rgba(255, 255, 255, 0) 50%,#ffffff 75%);
+  mask-size: 800%;
+  mask-position: 0;
+}
+
+.logoImg:hover {
+  transition: mask-position 2s ease;
+  mask-position: 120%;
+  opacity: 1;
 }
 
 .linklist {
@@ -197,6 +212,7 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   font-family: 'Josefin Sans';
 }
 
@@ -224,17 +240,23 @@ a {
   margin-top: 3%;
   background: #32717f;
   color: white;
-  padding: 2%;
+  padding: 1%;
   width: 20%;
   height: 15%;
   text-align: center;
   border-radius: 25px;
-  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+  font-size: larger;
   opacity: 0;
   animation-name: fadein;
   animation-duration: 350ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  mask-image: linear-gradient(45deg,#ffffff 25%,rgba(255, 255, 255, 0) 50%,#ffffff 75%);
+  mask-size: 800%;
+  mask-position: 0;
+  border-bottom: solid 7px #0f434a;
+  border-left: solid 7px #0f434a;
+  border-right: solid 1px #0f434a;
 }
 
 @keyframes fadein {
@@ -250,6 +272,9 @@ a {
 .linkbox:hover {
   cursor: pointer;
   background: #1D8A99;
+  transition: mask-position 2s ease;
+  mask-position: 120%;
+  opacity: 1;
 }
 
 .headerbox {
@@ -277,7 +302,28 @@ a {
   letter-spacing: .15em;
   animation: 
     typing 0.75s steps(4, end),
-    blink-caret .75s step-end 1;
+    blink-caret .75s step-end 1,
+    pulse 5s infinite;
+}
+
+@keyframes pulse {
+  from, to {
+    color: rgb(255, 255, 255);
+  }
+
+  23% {
+    color: #8ff2f3;
+  }
+  45% {
+    color: rgb(92, 241, 122);
+  }
+  69%{
+    color: rgb(252, 134, 134)
+  }
+
+  92% {
+    color: white;
+  }
 }
 
 @keyframes typing {
@@ -286,7 +332,7 @@ a {
 }
 
 @keyframes blink-caret {
-  from, to { border-color: white }
+  from, to { border-color: rgb(255, 255, 255) }
   100% { border-color: transparent; }
 }
 
@@ -301,9 +347,30 @@ a {
   animation: 
     appear 0s steps(1, end),
     typing2 2s steps(17, end),
-    blink-caret2 .75s step-end 5;
+    blink-caret2 .75s step-end 5,
+    pulse2 5s infinite;
   animation-delay: 1s;
   animation-fill-mode: forwards;
+}
+
+@keyframes pulse2 {
+  from, to {
+    color: rgb(255, 255, 255);
+  }
+
+  23% {
+    color: #8ff2f3;
+  }
+  45% {
+    color: rgb(92, 241, 122);
+  }
+  69%{
+    color: rgb(252, 134, 134)
+  }
+
+  92% {
+    color: white;
+  }
 }
 
 @keyframes appear {

@@ -18,15 +18,19 @@ function Nav() {
         switch (window.location.pathname){
             case '/aboutme':
                 setIsActive2(true);
+                setIsActive1(false);
                 break;
             case '/skills':
                 setIsActive3(true);
+                setIsActive1(false);
                 break;
             case '/projects':
                 setIsActive4(true);
+                setIsActive1(false);
                 break;
             case '/feedback':
                 setIsActive5(true);
+                setIsActive1(false);
                 break;
             default:
                 setIsActive1(true);
