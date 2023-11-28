@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(205, 203, 203); 
+  background: #8FBFE0; 
 }
 
 code {
@@ -23,7 +23,7 @@ code {
 .navbar {
   list-style: none;
   display: flex;
-  background: #6031b7;
+  background: #7C77B9;
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -39,6 +39,16 @@ code {
   text-align: center;
 }
 
+.activeNavbutton {
+  background: #3c1f73;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  text-align: center;
+}
+
+
 .navbutton:hover {
   background: #3c1f73;
   cursor: pointer;
@@ -46,11 +56,17 @@ code {
 
 .navbutton a{
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
 .navbutton a:visited {
   color: white;
   text-decoration: none;
+}
+
+.navbutton a.active {
+  font-weight: bold;
 }
 
 a:visited {
