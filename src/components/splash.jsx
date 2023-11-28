@@ -18,12 +18,12 @@ function Splash(){
             <div className="linklist">
                 <ul className="linklistRow1">
                     {listItems1.map((item, idx) => (
-                    <li className="linkbox" id={idx} key={idx} style={{ animationDelay: `${175 * idx}ms` }}>{item}</li>
+                    <li className="linkbox" id={idx} key={idx} style={{ animationDelay: `${200 * idx}ms` }}>{item}</li>
                     ))}
                 </ul>
                 <ul className="linklistRow2">
                     {listItems2.map((item, idx) => (
-                    <li className="linkbox" id={`${idx}A`} key={`${idx}A`} style={{ animationDelay: `${175 * (idx+1)}ms` }}>{item}</li>
+                    <li className="linkbox" id={`${idx}A`} key={`${idx}A`} style={{ animationDelay: `${200 * (idx+1)}ms` }}>{item}</li>
                     ))}
                 </ul>
             </div>

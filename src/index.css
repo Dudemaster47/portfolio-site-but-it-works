@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -27,6 +30,7 @@ code {
   background: #7C77B9;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Josefin Sans';
   margin: 0;
   z-index: 10;
   box-shadow: 0px 5px 5px rgb(0, 0, 0);
@@ -193,6 +197,7 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: 'Josefin Sans';
 }
 
 .linklistRow1 {
@@ -248,9 +253,10 @@ a {
 }
 
 .headerbox {
-  margin-top: 2%;
+  margin: 0;
   color: white;
   font-size: xx-large;
+  font-family: 'Permanent Marker';
   text-shadow: -4px 4px black;
   display: flex;
   flex-direction: column;
@@ -259,4 +265,58 @@ a {
 
 .innerHeaderbox {
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+.splashtext1 {
+  overflow: hidden;
+  border-right: .15em solid transparent;
+  padding-left: 0.5%;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: .15em;
+  animation: 
+    typing 0.75s steps(4, end),
+    blink-caret .75s step-end 1;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 30% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: white }
+  100% { border-color: transparent; }
+}
+
+.splashtext2 {
+  overflow: hidden;
+  border-right: .15em solid transparent;
+  white-space: nowrap;
+  padding-left: 1%;
+  opacity: 0%;
+  margin: 0;
+  letter-spacing: .15em;
+  animation: 
+    appear 0s steps(1, end),
+    typing2 2s steps(17, end),
+    blink-caret2 .75s step-end 5;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret2 {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }
