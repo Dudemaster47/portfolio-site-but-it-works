@@ -1,6 +1,9 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import githubLogo from '../images/github.png'
+import linkedinLogo from '../images/linkedin.png'
+import wellfoundLogo from '../images/Wellfound.png'
 
 function Nav() {
     const [isActive1, setIsActive1] = useState(true);
@@ -8,7 +11,6 @@ function Nav() {
     const [isActive3, setIsActive3] = useState(false);
     const [isActive4, setIsActive4] = useState(false);
     const [isActive5, setIsActive5] = useState(false);
-    const [isActive6, setIsActive6] = useState(false);
 
     const navigate = useNavigate();
 
@@ -19,7 +21,6 @@ function Nav() {
         setIsActive3(false);
         setIsActive4(false);
         setIsActive5(false);
-        setIsActive6(false);
         navigate('/');
     }
 
@@ -30,7 +31,6 @@ function Nav() {
         setIsActive3(false);
         setIsActive4(false);
         setIsActive5(false);
-        setIsActive6(false);
         navigate('/aboutme');
     }
 
@@ -41,7 +41,6 @@ function Nav() {
         setIsActive3(true);
         setIsActive4(false);
         setIsActive5(false);
-        setIsActive6(false);
         navigate('/skills');
     }
 
@@ -52,7 +51,6 @@ function Nav() {
         setIsActive3(false);
         setIsActive4(true);
         setIsActive5(false);
-        setIsActive6(false);
         navigate('/projects');
     }
 
@@ -63,23 +61,11 @@ function Nav() {
         setIsActive3(false);
         setIsActive4(false);
         setIsActive5(true);
-        setIsActive6(false);
-        navigate('/socials');
-    }
-
-    const clickHandler6 = (e) => {
-        e.preventDefault();
-        setIsActive1(false);
-        setIsActive2(false);
-        setIsActive3(false);
-        setIsActive4(false);
-        setIsActive5(false);
-        setIsActive6(true);
         navigate('/feedback');
     }
 
     return (
-        <nav className='outerbar'>
+        <nav className="outerbar">
             <ul className="navbar">
                 <li className={isActive1 ? "activeNavbutton" : "navbutton"} onClick={clickHandler1}>
                     <NavLink to='/' exact={true} activeClassName='active'>
@@ -102,14 +88,28 @@ function Nav() {
                     </NavLink>
                 </li>
                 <li className={isActive5 ? "activeNavbutton" : "navbutton"} onClick={clickHandler5}>
-                    <NavLink to='/socials' exact={true} activeClassName='active'>
-                    Socials
-                    </NavLink>
-                </li>
-                <li className={isActive6 ? "activeNavbutton" : "navbutton"} onClick={clickHandler6}>
                     <NavLink to='/feedback' exact={true} activeClassName='active'>
                     Contact Me!
                     </NavLink>
+                </li>
+                <li className="navbutton2">
+                    <ul className="socialList">
+                        <li className="socialIcon">
+                            <a href="https://www.linkedin.com/in/alex-hiller-422baa163/">
+                                <img src={linkedinLogo} className="logoImg" alt="LinkedIn" />
+                            </a>
+                        </li>
+                        <li className="socialIcon">
+                            <a href="https://wellfound.com/u/alex-hiller">
+                                <img src={wellfoundLogo} className="logoImg" alt="Wellfound"/>
+                            </a>
+                        </li>
+                        <li className="socialIcon">
+                            <a href="https://github.com/Dudemaster47">
+                                <img src={githubLogo} className="logoImg" alt="Github" />
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>

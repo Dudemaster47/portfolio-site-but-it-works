@@ -6,7 +6,6 @@ import AboutMe from './components/about_me';
 import {Feedback} from './components/feedback';
 import ProjectLinks from './components/project_links';
 import Skills from './components/skills';
-import Socials from './components/socials';
 import Splash from './components/splash';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/projects" element={<ProjectLinks />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/socials" element={<Socials />} />
         <Route exact path="/" element={<Splash />} />
       </Routes>
     </BrowserRouter>
