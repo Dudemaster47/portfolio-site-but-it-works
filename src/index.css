@@ -247,16 +247,10 @@ a {
   border-radius: 25px;
   font-size: larger;
   opacity: 0;
-  animation-name: fadein;
-  animation-duration: 350ms;
-  animation-iteration-count: 1;
+  animation: fadein 350ms 1;
   animation-fill-mode: forwards;
-  mask-image: linear-gradient(45deg,#ffffff 25%,rgba(255, 255, 255, 0) 50%,#ffffff 75%);
-  mask-size: 800%;
-  mask-position: 0;
-  border-bottom: solid 7px #0f434a;
-  border-left: solid 7px #0f434a;
-  border-right: solid 1px #0f434a;
+  box-shadow: -5px 5px #0f434a;
+  transition: all 0.25s ease;
 }
 
 @keyframes fadein {
@@ -271,10 +265,11 @@ a {
 
 .linkbox:hover {
   cursor: pointer;
-  background: #1D8A99;
-  transition: mask-position 2s ease;
-  mask-position: 120%;
-  opacity: 1;
+  background: #36b8c9;
+  box-shadow: -10px 10px #0f434a;
+  transform: translateX(5px) translateY(-5px);
+  text-shadow: -2px 2px black;
+  transition: all 0.25s ease;
 }
 
 .headerbox {

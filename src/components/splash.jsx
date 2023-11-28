@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Splash(){
     const listItems1 = [<Link to='/aboutme' exact={true}><h1>About Me</h1></Link>, <Link to='/skills' exact={true}><h1>Skills</h1></Link>, <Link to='/projects' exact={true}><h1>Projects</h1></Link>]
-    const listItems2 = [<Link><h1>Resume</h1></Link>, <Link to='/feedback' exact={true}><h1>Contact Me!</h1></Link>]
+    const listItems2 = [<Link><h1>Resumé</h1></Link>, <Link to='/feedback' exact={true}><h1>Contact Me!</h1></Link>]
 
     return (
         <>
