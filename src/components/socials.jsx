@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Socials() {
 
     return (
-        <div class="splashbox">
+        <div className="splashbox">
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/alex-hiller-422baa163/">LinkedIn</a>

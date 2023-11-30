@@ -1,7 +1,7 @@
 function ProjectLinks() {
 
     return (
-        <div class="splashbox">
+        <div className="splashbox">
             <ul>
                 <li>
                     <a href="https://home-cooked.onrender.com/">Homecooked</a>

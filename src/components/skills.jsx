@@ -15,7 +15,7 @@ function Skills(){
                 <li>Git</li>
                 <li>Microsoft Office Proficiency (Powerpoint, Excel, Word)</li>
             </ul>
-            <h3 class="skillheader" id="skillheader2">Scientific Skills</h3>
+            <h3 className="skillheader" id="skillheader2">Scientific Skills</h3>
             <ul className="skillchild2">
                 <li>Spectroscopy (UV-Vis, IR, Fluorescence, NMR, Mass Spec.)</li>
                 <li>Chromatography (Gas, HPLC)</li>
