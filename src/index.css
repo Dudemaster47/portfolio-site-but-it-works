@@ -92,9 +92,6 @@ a {
 }
 
 .splashbox {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 5%;
   background: #32717f;
   color: white;
   padding: 2%;
@@ -384,7 +381,69 @@ a {
   50% { border-color: white; }
 }
 
+.splashtext3 {
+  margin: 0;
+  letter-spacing: .15em;
+  animation: pulse3 5s infinite;
+}
+
+@keyframes pulse3 {
+  from, to {
+    color: rgb(255, 255, 255);
+  }
+
+  23% {
+    color: #8ff2f3;
+  }
+  45% {
+    color: rgb(92, 241, 122);
+  }
+  69%{
+    color: rgb(252, 134, 134)
+  }
+
+  92% {
+    color: white;
+  }
+}
+
 .aboutMeRows {
   display: flex;
   flex-direction: column;
+}
+
+.aboutMeRow1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.rooBox {
+  width: 20%;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 0px 5px 5px #0f434a;
+  animation: fadein 1s 1;
+  animation-fill-mode: forwards; 
+}
+
+.roopic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 5px 5px #0f434a;
+  transition: all 0.25s ease;
+}
+
+.roopic:hover {
+  box-shadow: 0px 10px 10px #0f434a;
+  transform: scale(1.2, 1.2);
+  transition: all 0.25s ease;
+}
+
+.mepic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 5px 5px #0f434a;
 }
