@@ -95,11 +95,12 @@ a {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 5%;
-  background: #1b2b88;
+  background: #32717f;
   color: white;
   padding: 2%;
+  font-family: 'Josefin Sans';
   border-radius: 25px;
-  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+  box-shadow: 0px 5px 5px #0f434a;
 }
 
 .skillbox {
@@ -381,4 +382,9 @@ a {
 @keyframes blink-caret2 {
   from, to { border-color: transparent }
   50% { border-color: white; }
+}
+
+.aboutMeRows {
+  display: flex;
+  flex-direction: column;
 }
