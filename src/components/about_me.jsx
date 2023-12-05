@@ -24,12 +24,12 @@ function AboutMe(){
                         <p>In the meantime, I'm always looking for some new project to funnel my endless creative energy into.</p> 
                         <p>It can be hard to balance so many outlets, but I find a way!</p>
                         <p>If I had to say where my talents lie, it'd probably be front end programming and design.</p>
-                        <p>UI/UX design is fun, and a passion of mine. But I'm just as capable on the back end, full stack baby!</p>
+                        <p>UI/UX design is fun, and a passion of mine. But I'm just as capable on the back end. Full stack, baby!</p>
                         <p>(If you think my cat, Roo, is adorable, click on her for more pics!)</p>
                     </div>
                     <div className="rooBox">
                         <p className="metext">This is just a picture of me. There is nothing fancy here.</p>
-                        <img className="mepic" src={me} alt="This is just a picture of me. There is no fancy functionality." />
+                        <img className="mepic" src={me} alt="This is just a picture of me. There is nothing fancy here." />
                     </div>
                 </div>
                 <div className="aboutMeRow2">
