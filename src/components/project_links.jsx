@@ -18,6 +18,21 @@ function ProjectLinks() {
     const [p2Open, setp2Open] = useState(false);
     const [p3Open, setp3Open] = useState(false);
 
+    const clickHandler1 = (e) => {
+        e.preventDefault();
+        setp1Open(!p1Open);
+    }
+
+    const clickHandler2 = (e) => {
+        e.preventDefault();
+        setp2Open(!p2Open);
+    }
+
+    const clickHandler3 = (e) => {
+        e.preventDefault();
+        setp3Open(!p3Open);
+    }
+
     return (
         // <div className="splashbox">
         //     <ul>
@@ -33,9 +48,14 @@ function ProjectLinks() {
         //     </ul>
         // </div>
         <>
+            <div className="headerbox">
+                <div className="splashtext3">
+                    <h1>Projects</h1> 
+                </div>
+            </div>
             <div className="projectBox">
-                <h2 className="projectHeader" id="P1">Homecooked</h2>
-                <div className="infobox" id="I1">
+                <h2 className="projectHeader" id="P1" onClick={clickHandler1}>Homecooked</h2>
+                <div className="infobox" id="I1" style={p1Open ? {display: "flex"} : {display: "none"}}>
                     <div className="textbox">
                         <p>A fusion of Doordash and Etsy, it's a website where you can set up your own shop and sell homecooked food directly to the masses!
                             Built with a React-Redux front end and a Flask back end, it has a full suite of CRUD features and is fully functional. 
@@ -59,8 +79,8 @@ function ProjectLinks() {
                     </div>
 
                 </div>
-                <h2 className="projectHeader" id="P2">Card Games!!</h2>
-                <div className="infobox" id="I2">
+                <h2 className="projectHeader" id="P2" onClick={clickHandler2}>Card Games!!</h2>
+                <div className="infobox" id="I2" style={p2Open ? {display: "flex"} : {display: "none"}}>
                     <div className="textbox">
                         <p>A fairly basic website where you can set up an account and play War against a CPU opponent. It was developed using a Flask back end and a React-Redux front end.
                             Currently, you can create a profile, add custom deck images to use for yourself, and create a game to play. The whole site isn't fully functional currently, but it does feature fully functioning gameplay.
@@ -82,8 +102,8 @@ function ProjectLinks() {
                         </div>
                     </div>
                 </div>
-                <h2 className="projectHeader" id="P3">Blackjack.JS</h2>
-                <div className="infobox" id="I3">
+                <h2 className="projectHeader" id="P3" onClick={clickHandler3}>Blackjack.JS</h2>
+                <div className="infobox" id="I3" style={p3Open ? {display: "flex"} : {display: "none"}}>
                     <div className="textbox">
                         <p>A simple application that allows you to play blackjack in a VS Code terminal utilizing Node JS. Built entirely in javascript with a class-based architecture.
                             There's not a huge amount to say. It allows for single player and local multiplayer, and has a betting system and keeps track of "money" that is won and lost.
