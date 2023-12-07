@@ -46,10 +46,14 @@ function ProjectLinks() {
                         <Link to="https://github.com/kympanic/homecooked/">Github Link</Link>
                     </div>
                     <div className="picturebox">
-                        <img src={homecookedSplash} alt="splash page of Homecooked" />
-                        <img src={homecookedProfile} alt="profile page of Homecooked" />
-                        <img src={homecookedShop} alt="example menu on shop page of Homecooked" />
-                        <img src={homecookedCart} alt="an empty cart in Homecooked" />
+                        <div className="pbRow1">
+                            <img className="projImg" src={homecookedSplash} alt="splash page of Homecooked" />
+                            <img className="projImg" src={homecookedProfile} alt="profile page of Homecooked" />
+                        </div>
+                        <div className="pbRow2">
+                            <img className="projImg" src={homecookedShop} alt="example menu on shop page of Homecooked" />
+                            <img className="projImg" src={homecookedCart} alt="an empty cart in Homecooked" />
+                        </div>
                     </div>
 
                 </div>
@@ -64,10 +68,14 @@ function ProjectLinks() {
                         <Link to="https://github.com/Dudemaster47/Card-Game-Capstone">Github Link</Link>
                     </div>
                     <div className="picturebox">
-                        <img src={cardGameSplash} alt="splash page of Card Games!!" />
-                        <img src={cardGameHelp} alt="help page of Card Games!!" />
-                        <img src={cardGameProfile} alt="profile page of Card Games!!" />
-                        <img src={cardGameGame} alt="a game of War in progress in Card Games!!" />
+                        <div className="pbRow1">
+                            <img className="projImg" src={cardGameSplash} alt="splash page of Card Games!!" />
+                            <img className="projImg" src={cardGameHelp} alt="help page of Card Games!!" />
+                        </div>
+                        <div className="pbRow2">
+                            <img className="projImg" src={cardGameProfile} alt="profile page of Card Games!!" />
+                            <img className="projImg" src={cardGameGame} alt="a game of War in progress in Card Games!!" />
+                        </div>
                     </div>
                 </div>
                 <h3 className="projectHeader" id="P3">Blackjack.JS</h3>
@@ -80,10 +88,14 @@ function ProjectLinks() {
                         <Link to="https://github.com/Dudemaster47/blackjack2">Github Link</Link>
                     </div>
                     <div className="picturebox">
-                        <img src={blackjackStart} alt="the start picture for blackjack.js" />
-                        <img src={blackjackCommands} alt="a help menu for blackjack.js" />
-                        <img src={blackjackBet} alt="what it looks like to place a bet in blackjack.js" />
-                        <img src={blackjackEnd} alt="whoops, it looks like the house always wins in blackjack.js" />
+                        <div className="pbRow1">
+                            <img className="projImg" src={blackjackStart} alt="the start picture for blackjack.js" />
+                            <img className="projImg" src={blackjackCommands} alt="a help menu for blackjack.js" />
+                        </div>
+                        <div className="pbRow2">
+                            <img className="projImg" src={blackjackBet} alt="what it looks like to place a bet in blackjack.js" />
+                            <img className="projImg" src={blackjackEnd} alt="whoops, it looks like the house always wins in blackjack.js" />
+                        </div>
                     </div>
                 </div>
             </div>

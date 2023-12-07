@@ -95,6 +95,8 @@ a {
   background: #32717f;
   color: white;
   padding: 2%;
+  width: 30%;
+  height: auto;
   font-family: 'Josefin Sans';
   border-radius: 25px;
   box-shadow: 0px 5px 5px #0f434a;
@@ -102,7 +104,13 @@ a {
 }
 
 .splashbox p{
+  font-size: 1.1rem;
   transition: all 0.25s ease;
+}
+
+.introSentence {
+  text-decoration: underline;
+  text-align: center;
 }
 
 .splashbox:hover {
@@ -113,7 +121,7 @@ a {
 
 .splashbox:hover p{
   transition: all 0.25s ease;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.1);
 }
 
 .skillbox {
@@ -490,9 +498,56 @@ a {
   font-family: 'Josefin Sans';
   text-shadow: -1px 1px black;
   font-size: x-large;
+  width: 15%;
   z-index: -1;
   margin-top: 10%;
   margin-bottom: 10%;
   margin-left: 2%;
   margin-right: 5%;
+}
+
+.infobox {
+  display: flex;
+  flex-direction: row;
+  background: #32717f;
+  color: white;
+  padding: 3%;
+  margin: 2%;
+  font-family: 'Josefin Sans';
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px #0f434a;
+}
+
+.textbox {
+  margin-right: 1%;
+}
+
+.picturebox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
+}
+
+.pbRow1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.pbRow2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.projImg {
+  width: 250px;
+  height: 200px;
+  margin: 1%;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px #0f434a;
+  transition: all 0.25s ease;
+}
+
+.projImg:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
 }

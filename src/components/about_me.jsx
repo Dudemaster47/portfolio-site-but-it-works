@@ -17,15 +17,15 @@ function AboutMe(){
                         <Link><img className="roopic" src={roo} alt="Click this picture of my cat for more pictures of my cat!" /></Link>
                     </div>
                     <div className="splashbox">
-                        <p>I'm an artist, a writer, a musician, a scientist, and a programmer.</p>
-                        <p>I'm also a foodie, an avid gamer, a loving uncle, and the proud dad of one really adorable cat!</p>
-                        <p>I've got a lot to offer the world, and I'm looking for new challenges that will allow me to do so.</p>
-                        <p>Plus, I've got a little feline lady relying on me who deserves to be spoiled rotten.</p>
-                        <p>In the meantime, I'm always looking for some new project to funnel my endless creative energy into.</p> 
-                        <p>It can be hard to balance so many outlets, but I find a way!</p>
-                        <p>If I had to say where my talents lie, it'd probably be front end programming and design.</p>
-                        <p>UI/UX design is fun, and a passion of mine. But I'm just as capable on the back end. Full stack, baby!</p>
-                        <p>(If you think my cat, Roo, is adorable, click on her for more pics!)</p>
+                        <h2 className="introSentence">I'm a programmer, an artist, a writer, a musician, and a scientist.</h2>
+                        <p>I'm also a foodie, an avid gamer, a loving uncle, and the proud dad of one really adorable cat! 
+                            I've got a lot to offer the world, and I'm looking for new challenges that will allow me to do so.
+                            Plus, I've got a little feline lady relying on me who deserves to be spoiled rotten.
+                            In the meantime, I'm always looking for some new project to funnel my endless creative energy into.
+                            It can be hard to balance so many outlets, but I find a way!
+                            If I had to say where my talents lie, it'd probably be front end programming and design.
+                            UI/UX design is fun, and a passion of mine. But I'm just as capable on the back end. Full stack, baby!
+                            (If you think my cat, Roo, is adorable, click on her for more pics!)</p>
                     </div>
                     <div className="rooBox">
                         <p className="metext">This is just a picture of me. There is nothing fancy here.</p>
