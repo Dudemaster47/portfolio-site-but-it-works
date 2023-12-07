@@ -506,13 +506,25 @@ a {
   margin-right: 5%;
 }
 
+.projectBox {
+  margin: 2%;
+  padding: 2%;
+}
+
+.linkBox {
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline;
+}
+
 .infobox {
   display: flex;
   flex-direction: row;
   background: #32717f;
   color: white;
   padding: 3%;
-  margin: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   font-family: 'Josefin Sans';
   border-radius: 25px;
   box-shadow: 0px 5px 5px #0f434a;
@@ -550,4 +562,28 @@ a {
 .projImg:hover {
   cursor: pointer;
   transform: scale(1.1, 1.1);
+  transition: all 0.25s ease;
+}
+
+.projectHeader {
+  background: #8cfffb;
+  padding: 0.5%;
+  color: white;
+  text-shadow: 
+    2px 2px black,
+    -1px 2px black,
+    1px -1px black,
+    -1px -1px black;
+  width: 10%;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 5px 5px #0f434a;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.projectHeader:hover {
+  cursor: pointer;
+  transition: all 0.25s ease;
+  transform: scale(1.3, 1.3);
 }
