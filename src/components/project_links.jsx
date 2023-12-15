@@ -34,19 +34,6 @@ function ProjectLinks() {
     }
 
     return (
-        // <div className="splashbox">
-        //     <ul>
-        //         <li>
-        //             <a href="https://home-cooked.onrender.com/">Homecooked</a>
-        //         </li>
-        //         <li>
-        //             <a href="https://card-games.onrender.com/">Card Game!!</a>
-        //         </li>
-        //         <li>
-        //             <a href="https://github.com/Dudemaster47/blackjack2">Blackjack (Download Link)</a>
-        //         </li>
-        //     </ul>
-        // </div>
         <>
             <div className="headerbox">
                 <div className="splashtext3">
@@ -55,8 +42,8 @@ function ProjectLinks() {
             </div>
             <div className="projectBox">
                 <h2 className="projectHeader" id="P1" onClick={clickHandler1}>Homecooked</h2>
-                <div className="infobox" id="I1" style={p1Open ? {transition: "all 1s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
-                    <div className="textbox" style={p1Open ? {transition: "all 0.5s ease 0.9s", opacity: "1"} : {opacity: "0"}}>
+                {/* <div className="infobox" id="I1" style={p1Open ? {transition: "all 0.75s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
+                    <div className="textbox" style={p1Open ? {transition: "all 0.5s ease 0.7s", opacity: "1"} : {opacity: "0"}}>
                         <p>A fusion of Doordash and Etsy, it's a website where you can set up your own shop and sell homecooked food directly to the masses!
                             Built with a React-Redux front end and a Flask back end, it has a full suite of CRUD features and is fully functional. 
                             A user can order food from an existing store, create and customize their own store, review products, view the averaged score of a store, and even check out with a fully functional cart.
@@ -67,7 +54,7 @@ function ProjectLinks() {
                             <Link to="https://github.com/kympanic/homecooked/">Github Link</Link>
                         </div>
                     </div>
-                    <div className="picturebox" style={p1Open ? {transition: "all 0.5s ease 0.95s", opacity: "1"} : {transition: "all 0.25s ease", opacity: "0", overflow: "hidden"}}>
+                    <div className="picturebox" style={p1Open ? {transition: "all 0.5s ease 0.75s", opacity: "1"} : {transition: "all 0.25s ease", opacity: "0", overflow: "hidden"}}>
                         <div className="pbRow1">
                             <img className="projImg" src={homecookedSplash} alt="splash page of Homecooked" />
                             <img className="projImg" src={homecookedProfile} alt="profile page of Homecooked" />
@@ -77,11 +64,10 @@ function ProjectLinks() {
                             <img className="projImg" src={homecookedCart} alt="an empty cart in Homecooked" />
                         </div>
                     </div>
-
-                </div>
+                </div> */}
                 <h2 className="projectHeader" id="P2" onClick={clickHandler2}>Card Games!!</h2>
-                <div className="infobox" id="I2" style={p2Open ? {transition: "all 1s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
-                    <div className="textbox" style={p2Open ? {transition: "all 0.5s ease 0.9s", opacity: "1"} : {opacity: "0"}}>
+                {/* <div className="infobox" id="I2" style={p2Open ? {transition: "all 0.75s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
+                    <div className="textbox" style={p2Open ? {transition: "all 0.5s ease 0.7s", opacity: "1"} : {opacity: "0"}}>
                         <p>A fairly basic website where you can set up an account and play War against a CPU opponent. It was developed using a Flask back end and a React-Redux front end.
                             Currently, you can create a profile, add custom deck images to use for yourself, and create a game to play. The whole site isn't fully functional currently, but it does feature fully functioning gameplay.
                             I'll admit this is a bit rough appearance-wise and lacks in style, but the main focus is the game itself which works perfectly. Someday I'll return to it and add further functionality.
@@ -91,7 +77,7 @@ function ProjectLinks() {
                             <Link to="https://github.com/Dudemaster47/Card-Game-Capstone">Github Link</Link>
                         </div>
                     </div>
-                    <div className="picturebox" style={p2Open ? {transition: "all 0.5s ease 0.95s", opacity: "1"} : {transition: "all 0.25s ease", opacity: "0", overflow: "hidden"}}>
+                    <div className="picturebox" style={p2Open ? {transition: "all 0.5s ease 0.75s", opacity: "1"} : {transition: "all 0.25s ease", opacity: "0", overflow: "hidden"}}>
                         <div className="pbRow1">
                             <img className="projImg" src={cardGameSplash} alt="splash page of Card Games!!" />
                             <img className="projImg" src={cardGameHelp} alt="help page of Card Games!!" />
@@ -101,10 +87,10 @@ function ProjectLinks() {
                             <img className="projImg" src={cardGameGame} alt="a game of War in progress in Card Games!!" />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <h2 className="projectHeader" id="P3" onClick={clickHandler3}>Blackjack.JS</h2>
-                <div className="infobox" id="I3" style={p3Open ? {transition: "all 1s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
-                    <div className="textbox" style={p3Open ? {transition: "all 0.5s ease 0.9s", opacity: "1"} : {opacity: "0"}}>
+                {/* <div className="infobox" id="I3" style={p3Open ? {transition: "all 0.75s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
+                    <div className="textbox" style={p3Open ? {transition: "all 0.5s ease 0.7s", opacity: "1"} : {opacity: "0"}}>
                         <p>A simple application that allows you to play blackjack in a VS Code terminal utilizing Node JS. Built entirely in javascript with a class-based architecture.
                             There's not a huge amount to say. It allows for single player and local multiplayer, and has a betting system and keeps track of "money" that is won and lost.
                             There's no dedicated website for this game, but it can be downloaded through github. To do: add a readme that explains how to play...
@@ -113,7 +99,7 @@ function ProjectLinks() {
                             <Link to="https://github.com/Dudemaster47/blackjack2">Github Link</Link>
                         </div>
                     </div>
-                    <div className="picturebox" style={p3Open ? {transition: "all 0.5s ease 0.95s", opacity: "1"} : {transition: "all 0.25s ease", opacity: "0", overflow: "hidden"}}>
+                    <div className="picturebox" style={p3Open ? {transition: "all 0.5s ease 0.75s", opacity: "1"} : {transition: "all 0.25s ease", opacity: "0", overflow: "hidden"}}>
                         <div className="pbRow1">
                             <img className="projImg" src={blackjackStart} alt="the start picture for blackjack.js" />
                             <img className="projImg" src={blackjackCommands} alt="a help menu for blackjack.js" />
@@ -123,7 +109,7 @@ function ProjectLinks() {
                             <img className="projImg" src={blackjackEnd} alt="whoops, it looks like the house always wins in blackjack.js" />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )
