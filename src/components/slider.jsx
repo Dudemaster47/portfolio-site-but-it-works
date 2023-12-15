@@ -1,3 +1,5 @@
+import "./slider.css"
+
 const Slider = ({ images, active, setActive }) => {
     const onNext = () => {
         if (active < images.length - 1) {
@@ -40,3 +42,5 @@ const Slide = ({ image_url, caption, active }) => {
         </div>
     );
 };
+
+export default Slider;

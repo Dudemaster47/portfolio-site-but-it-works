@@ -1,3 +1,5 @@
+import "./modal.css";
+
 const Modal = ({ children, show, onClose, title }) => {
     return (
         show && (

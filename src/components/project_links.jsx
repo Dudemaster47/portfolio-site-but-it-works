@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Modal from "./modal.jsx";
+import Slider from "./slider.jsx";
 import { Link } from "react-router-dom";
 import homecookedSplash from "../images/homecooked splash.png";
 import homecookedProfile from "../images/homecooked profile.png";
@@ -14,24 +16,114 @@ import blackjackCommands from "../images/blackjack commands.png";
 import blackjackEnd from "../images/blackjack end.png";
 
 function ProjectLinks() {
-    const [p1Open, setp1Open] = useState(false);
-    const [p2Open, setp2Open] = useState(false);
-    const [p3Open, setp3Open] = useState(false);
+    // const [p1Open, setp1Open] = useState(false);
+    // const [p2Open, setp2Open] = useState(false);
+    // const [p3Open, setp3Open] = useState(false);
 
-    const clickHandler1 = (e) => {
-        e.preventDefault();
-        setp1Open(!p1Open);
-    }
+    // const clickHandler1 = (e) => {
+    //     e.preventDefault();
+    //     setp1Open(!p1Open);
+    // }
 
-    const clickHandler2 = (e) => {
-        e.preventDefault();
-        setp2Open(!p2Open);
-    }
+    // const clickHandler2 = (e) => {
+    //     e.preventDefault();
+    //     setp2Open(!p2Open);
+    // }
 
-    const clickHandler3 = (e) => {
-        e.preventDefault();
-        setp3Open(!p3Open);
-    }
+    // const clickHandler3 = (e) => {
+    //     e.preventDefault();
+    //     setp3Open(!p3Open);
+    // 
+    const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [active1, setActive1] = useState(0);
+    const [active2, setActive2] = useState(0);
+    const [active3, setActive3] = useState(0);
+
+    const homecookedImages = [
+        {
+            image_url: `${homecookedSplash}`,
+            caption: "Homecooked Splash Page"
+        },
+        {
+            image_url: `${homecookedProfile}`,
+            caption: "Homecooked Profile Page"
+        },
+        {
+            image_url: `${homecookedShop}`,
+            caption: "Homecooked Shop Page"
+        },
+        {
+            image_url: `${homecookedCart}`,
+            caption: "Homecooked Cart Page"
+        }
+    ];
+
+    const cardgameImages = [
+        {
+            image_url: `${cardGameSplash}`,
+            caption: "Card Games!! Splash Page"
+        },
+        {
+            image_url: `${cardGameProfile}`,
+            caption: "Card Games!! Profile Page"
+        },
+        {
+            image_url: `${cardGameHelp}`,
+            caption: "Card Games!! Help Page"
+        },
+        {
+            image_url: `${cardGameGame}`,
+            caption: "Card Games!! Game Page"
+        }
+    ];
+
+    const blackjackImages = [
+        {
+            image_url: `${blackjackStart}`,
+            caption: "Blackjack Start Ascii"
+        },
+        {
+            image_url: `${blackjackBet}`,
+            caption: "Blackjack Betting Prompt"
+        },
+        {
+            image_url: `${blackjackCommands}`,
+            caption: "Blackjack Help Dialog"
+        },
+        {
+            image_url: `${blackjackEnd}`,
+            caption: "Blackjack End Ascii"
+        }
+    ];
+
+    const handleClick1 = (index) => {
+        setActive1(0);
+        setShow1(true);
+    };
+
+    const handleClick2 = (index) => {
+        setActive2(0);
+        setShow2(true);
+    };
+
+    const handleClick3 = (index) => {
+        setActive3(0);
+        setShow3(true);
+    };
+
+    const onClose1 = () => {
+        setShow1(false);
+    };
+
+    const onClose2 = () => {
+        setShow2(false);
+    };
+
+    const onClose3 = () => {
+        setShow3(false);
+    };
 
     return (
         <>
@@ -41,7 +133,18 @@ function ProjectLinks() {
                 </div>
             </div>
             <div className="projectBox">
-                <h2 className="projectHeader" id="P1" onClick={clickHandler1}>Homecooked</h2>
+                <h2 className="projectHeader" id="P1" onClick={handleClick1}>Homecooked</h2>
+                <Modal show={show1} title="Homecooked" onClose={onClose1}>
+                    <Slider images={homecookedImages} active={active1} setActive={setActive1} />
+                </Modal>
+                <h2 className="projectHeader" id="P2" onClick={handleClick2}>Card Games!!</h2>
+                <Modal show={show2} title="Card Games!!" onClose={onClose2}>
+                    <Slider images={cardgameImages} active={active2} setActive={setActive2} />
+                </Modal>
+                <h2 className="projectHeader" id="P3" onClick={handleClick3}>Blackjack.JS</h2>
+                <Modal show={show3} title="Blackjack.js" onClose={onClose3}>
+                    <Slider images={blackjackImages} active={active3} setActive={setActive3} />
+                </Modal>
                 {/* <div className="infobox" id="I1" style={p1Open ? {transition: "all 0.75s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
                     <div className="textbox" style={p1Open ? {transition: "all 0.5s ease 0.7s", opacity: "1"} : {opacity: "0"}}>
                         <p>A fusion of Doordash and Etsy, it's a website where you can set up your own shop and sell homecooked food directly to the masses!
@@ -65,7 +168,7 @@ function ProjectLinks() {
                         </div>
                     </div>
                 </div> */}
-                <h2 className="projectHeader" id="P2" onClick={clickHandler2}>Card Games!!</h2>
+                
                 {/* <div className="infobox" id="I2" style={p2Open ? {transition: "all 0.75s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
                     <div className="textbox" style={p2Open ? {transition: "all 0.5s ease 0.7s", opacity: "1"} : {opacity: "0"}}>
                         <p>A fairly basic website where you can set up an account and play War against a CPU opponent. It was developed using a Flask back end and a React-Redux front end.
@@ -88,7 +191,6 @@ function ProjectLinks() {
                         </div>
                     </div>
                 </div> */}
-                <h2 className="projectHeader" id="P3" onClick={clickHandler3}>Blackjack.JS</h2>
                 {/* <div className="infobox" id="I3" style={p3Open ? {transition: "all 0.75s ease", maxWidth: "95%", maxHeight: "400px", height: "400px", padding: "3%", marginTop: "2%", marginBottom: "2%"} : {maxWidth: "0", maxHeight: "0", height: "0", overflow: "hidden", whiteSpace: "nowrap", transition: "all 1s ease", padding: "0", margin: "0"}}>
                     <div className="textbox" style={p3Open ? {transition: "all 0.5s ease 0.7s", opacity: "1"} : {opacity: "0"}}>
                         <p>A simple application that allows you to play blackjack in a VS Code terminal utilizing Node JS. Built entirely in javascript with a class-based architecture.
