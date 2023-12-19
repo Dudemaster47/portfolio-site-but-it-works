@@ -16,32 +16,38 @@ export const Feedback = () => {
     };
 
     return (
-        
-        <div className="splashbox">
-            <form
-                ref={form}
-                onSubmit={sendEmail}
-                className="commentForm"
-            >
-                <label htmlFor="name">Name: </label>
-                <input
-                    type="text"
-                    name="user_name"
-                />
-                <label htmlFor="email">Email: </label>
-                <input
-                    type="email"
-                    name="user_email"
-                />
-                <br />
-                <label htmlFor="message">Message:</label>
-                <textarea
-                    name="message"
-                    rows="5"
-                    cols="33"
-                />
-                <input type="submit" value="Send" className="submitButton"/>
-            </form>
-        </div>
+        <>
+            <div className="headerbox">
+                <div className="splashtext3">
+                    <h1>Contact Me</h1> 
+                </div>
+            </div>
+            <div className="splashbox">
+                <form
+                    ref={form}
+                    onSubmit={sendEmail}
+                    className="commentForm"
+                >
+                    <label htmlFor="name">Name: </label>
+                    <input
+                        type="text"
+                        name="user_name"
+                    />
+                    <label htmlFor="email">Email: </label>
+                    <input
+                        type="email"
+                        name="user_email"
+                    />
+                    <br />
+                    <label htmlFor="message">Message:</label>
+                    <textarea
+                        name="message"
+                        rows="5"
+                        cols="33"
+                    />
+                    <input type="submit" value="Send" className="submitButton"/>
+                </form>
+            </div>
+        </>
     );
 };

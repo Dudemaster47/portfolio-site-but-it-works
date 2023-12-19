@@ -133,23 +133,23 @@ function ProjectLinks() {
                 </div>
             </div>
             <div className="projectBox">
-                <div class="projectInner">
+                <div class="projectInner" onClick={handleClick1}>
                     <h2 className="projectHeader" id="P1">Homecooked</h2>
-                    <img className="projectDemo" src={homecookedSplash} alt="Click to open the Homecooked modal" onClick={handleClick1} />
+                    <img className="projectDemo" src={homecookedSplash} alt="Click to open the Homecooked modal" />
                 </div>
                 <Modal show={show1} title="Homecooked" onClose={onClose1}>
                     <Slider images={homecookedImages} active={active1} setActive={setActive1} />
                 </Modal>
-                <div class="projectInner">
+                <div class="projectInner" onClick={handleClick2}>
                     <h2 className="projectHeader" id="P2">Card Games!!</h2>
-                    <img className="projectDemo" src={cardGameSplash} alt="Click to open the Card Games!! modal" onClick={handleClick2} />
+                    <img className="projectDemo" src={cardGameSplash} alt="Click to open the Card Games!! modal" />
                 </div>
                 <Modal show={show2} title="Card Games!!" onClose={onClose2}>
                     <Slider images={cardgameImages} active={active2} setActive={setActive2} />
                 </Modal>
-                <div class="projectInner">
+                <div class="projectInner" onClick={handleClick3}>
                     <h2 className="projectHeader" id="P3">Blackjack.JS</h2>
-                    <img className="projectDemo" src={blackjackStart} alt="Click to open the Blackjack.JS modal" onClick={handleClick3} />
+                    <img className="projectDemo" src={blackjackStart} alt="Click to open the Blackjack.JS modal" />
                 </div>
                 <Modal show={show3} title="Blackjack.js" onClose={onClose3}>
                     <Slider images={blackjackImages} active={active3} setActive={setActive3} />

@@ -36,7 +36,7 @@ function AboutMe(){
                     <div className="linklist">
                         <ul className="linklistRow1">
                             {listItems3.map((item, idx) => (
-                            <li className="linkbox" id={idx} key={idx} style={{ animationDelay: `${200 * idx}ms` }} >{item}</li>
+                            <li className="linkbox2" id={idx} key={idx} style={{ animationDelay: `${200 * idx}ms` }} >{item}</li>
                             ))}
                         </ul>
                     </div>
