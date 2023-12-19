@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
 import roo from "../images/roo1.jpg"
 import me from "../images/me.jpg"
+import ashLogo from "../images/ash-logo.png"
 
 function AboutMe(){
     const listItems3 = [<Link><h1>Writing Samples</h1></Link>, <Link><h1>Art Gallery</h1></Link>, <Link><h1>Music Player</h1></Link>]
     return (
         <>
             <div className="headerbox">
-                    <div className="splashtext3">
-                        <h1>About Me</h1> 
-                    </div>
+                <div className="miniLogoOuter">
+                    <img className="miniLogo" src={ashLogo} alt="logo" />
+                </div>
+                <div className="splashtext3">
+                    <h1>About Me</h1> 
+                </div>
             </div>
             <div className="aboutMeRows">
                 <div className="aboutMeRow1">

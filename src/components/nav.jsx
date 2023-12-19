@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import githubLogo from '../images/github.png'
 import linkedinLogo from '../images/linkedin.png'
 import wellfoundLogo from '../images/Wellfound.png'
+import ashLogo from "../images/ash-logo.png"
 
 function Nav() {
     const [isActive1, setIsActive1] = useState(false);
@@ -90,6 +91,9 @@ function Nav() {
 
     return (
         <nav className="outerbar">
+            <NavLink className="navLogoBG" to='/' exact={true} activeClassName='active' onClick={clickHandler1}>
+                <img className="navLogo" src={ashLogo} alt="nav logo" />
+            </NavLink>
             <ul className="navbar">
                 <li id="A" className={isActive1 ? "activeNavbutton" : "navbutton"} onClick={clickHandler1}>
                     <NavLink to='/' exact={true} activeClassName='active'>

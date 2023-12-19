@@ -1,4 +1,5 @@
 import "./slider.css"
+import { Link } from "react-router-dom";
 
 const Slider = ({ images, active, setActive }) => {
     const onNext = () => {
@@ -34,11 +35,14 @@ const Slider = ({ images, active, setActive }) => {
     );
 };
 
-const Slide = ({ image_url, caption, active }) => {
+const Slide = ({ image_url, caption, body, link, gitLink, active }) => {
     return (
         <div className={`slide ${active ? "active" : ""}`}>
             <img src={image_url} alt={caption} />
             <span>{caption}</span>
+            <p>{body}</p>
+            <Link to={link}>Website</Link>
+            <Link to={gitLink}>Github</Link>
         </div>
     );
 };

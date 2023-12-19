@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import ashLogo from "../images/ash-logo.png";
 
 export const Feedback = () => {
     const form = useRef();
@@ -18,6 +19,9 @@ export const Feedback = () => {
     return (
         <>
             <div className="headerbox">
+                <div className="miniLogoOuter">
+                    <img className="miniLogo" src={ashLogo} alt="logo" />
+                </div>
                 <div className="splashtext3">
                     <h1>Contact Me</h1> 
                 </div>

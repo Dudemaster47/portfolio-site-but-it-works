@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import ashLogo from "../images/ash-logo.png"
 
 function Splash(){
     const listItems1 = [<Link to='/aboutme' exact={true}><h1>About Me</h1></Link>, <Link to='/skills' exact={true}><h1>Skills</h1></Link>, <Link to='/projects' exact={true}><h1>Projects</h1></Link>]
@@ -31,6 +32,7 @@ function Splash(){
     return (
         <>
             <div className="headerbox">
+                <img className="logo" src={ashLogo} alt="logo" />
                 <div className="innerHeaderbox">
                     <div className="splashtext1">
                         <h1>Hi,</h1> 

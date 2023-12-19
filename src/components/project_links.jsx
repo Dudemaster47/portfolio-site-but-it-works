@@ -14,6 +14,7 @@ import blackjackStart from "../images/blackjack start.png";
 import blackjackBet from "../images/blackjack betting.png";
 import blackjackCommands from "../images/blackjack commands.png";
 import blackjackEnd from "../images/blackjack end.png";
+import ashLogo from "../images/ash-logo.png"
 
 function ProjectLinks() {
     // const [p1Open, setp1Open] = useState(false);
@@ -44,57 +45,94 @@ function ProjectLinks() {
     const homecookedImages = [
         {
             image_url: `${homecookedSplash}`,
-            caption: "Homecooked Splash Page"
+            caption: "Homecooked Splash Page",
+            body: "Homecooked was a group project developed in React-Redux with a Flask backend, a collective effort between myself, Megha Saghal, and Dan Yoo. Our concept was to make a combination of Doordash and Etsy; essentially, a place where you could create a store and sell your own home-cooked meals so that people could order out and still get that taste of home. This project was a major success, as we were able to implement four major CRUDS within the one-month period we had to work together: The ability to create a user account, the ability to view other users' stores (which also display their proximity to your location) and add meals to your cart as well as leaving reviews on selected dishes, the ability to create and edit your own store, and the ability to fill a cart and check out with your order. We also added a functional search feature, allowing users to search for a specific meal in order to find the right store for them. The logo was designed by yours truly, and a good deal of the interactivity and design elements utilized were a collaboration between myself and Dan Yoo.",
+            link: "https://home-cooked.onrender.com/",
+            gitLink: "https://github.com/kympanic/homecooked/"
         },
         {
             image_url: `${homecookedProfile}`,
-            caption: "Homecooked Profile Page"
+            caption: "Homecooked Profile Page",
+            body: "",
+            link: "https://home-cooked.onrender.com/",
+            gitLink: "https://github.com/kympanic/homecooked/"
         },
         {
             image_url: `${homecookedShop}`,
-            caption: "Homecooked Shop Page"
+            caption: "Homecooked Shop Page",
+            body: "",
+            link: "https://home-cooked.onrender.com/",
+            gitLink: "https://github.com/kympanic/homecooked/"
         },
         {
             image_url: `${homecookedCart}`,
-            caption: "Homecooked Cart Page"
+            caption: "Homecooked Cart Page",
+            body: "",
+            link: "https://home-cooked.onrender.com/",
+            gitLink: "https://github.com/kympanic/homecooked/"
         }
     ];
 
     const cardgameImages = [
         {
             image_url: `${cardGameSplash}`,
-            caption: "Card Games!! Splash Page"
+            caption: "Card Games!! Splash Page",
+            body: "",
+            link: "https://card-games.onrender.com/",
+            gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
+
         },
         {
             image_url: `${cardGameProfile}`,
-            caption: "Card Games!! Profile Page"
+            caption: "Card Games!! Profile Page",
+            body: "",
+            link: "https://card-games.onrender.com/",
+            gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
         },
         {
             image_url: `${cardGameHelp}`,
-            caption: "Card Games!! Help Page"
+            caption: "Card Games!! Help Page",
+            body: "",
+            link: "https://card-games.onrender.com/",
+            gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
         },
         {
             image_url: `${cardGameGame}`,
-            caption: "Card Games!! Game Page"
+            caption: "Card Games!! Game Page",
+            body: "",
+            link: "https://card-games.onrender.com/",
+            gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
         }
     ];
 
     const blackjackImages = [
         {
             image_url: `${blackjackStart}`,
-            caption: "Blackjack Start Ascii"
+            caption: "Blackjack Start Ascii",
+            body: "",
+            link: "",
+            gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
             image_url: `${blackjackBet}`,
-            caption: "Blackjack Betting Prompt"
+            caption: "Blackjack Betting Prompt",
+            body: "",
+            link: "",
+            gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
             image_url: `${blackjackCommands}`,
-            caption: "Blackjack Help Dialog"
+            caption: "Blackjack Help Dialog",
+            body: "",
+            link: "",
+            gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
             image_url: `${blackjackEnd}`,
-            caption: "Blackjack End Ascii"
+            caption: "Blackjack End Ascii",
+            body: "",
+            link: "",
+            gitLink: "https://github.com/Dudemaster47/blackjack2"
         }
     ];
 
@@ -128,6 +166,9 @@ function ProjectLinks() {
     return (
         <>
             <div className="headerbox">
+                <div className="miniLogoOuter">
+                    <img className="miniLogo" src={ashLogo} alt="logo" />
+                </div>
                 <div className="splashtext3">
                     <h1>Projects</h1> 
                 </div>
