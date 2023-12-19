@@ -133,15 +133,24 @@ function ProjectLinks() {
                 </div>
             </div>
             <div className="projectBox">
-                <h2 className="projectHeader" id="P1" onClick={handleClick1}>Homecooked</h2>
+                <div class="projectInner">
+                    <h2 className="projectHeader" id="P1">Homecooked</h2>
+                    <img className="projectDemo" src={homecookedSplash} alt="Click to open the Homecooked modal" onClick={handleClick1} />
+                </div>
                 <Modal show={show1} title="Homecooked" onClose={onClose1}>
                     <Slider images={homecookedImages} active={active1} setActive={setActive1} />
                 </Modal>
-                <h2 className="projectHeader" id="P2" onClick={handleClick2}>Card Games!!</h2>
+                <div class="projectInner">
+                    <h2 className="projectHeader" id="P2">Card Games!!</h2>
+                    <img className="projectDemo" src={cardGameSplash} alt="Click to open the Card Games!! modal" onClick={handleClick2} />
+                </div>
                 <Modal show={show2} title="Card Games!!" onClose={onClose2}>
                     <Slider images={cardgameImages} active={active2} setActive={setActive2} />
                 </Modal>
-                <h2 className="projectHeader" id="P3" onClick={handleClick3}>Blackjack.JS</h2>
+                <div class="projectInner">
+                    <h2 className="projectHeader" id="P3">Blackjack.JS</h2>
+                    <img className="projectDemo" src={blackjackStart} alt="Click to open the Blackjack.JS modal" onClick={handleClick3} />
+                </div>
                 <Modal show={show3} title="Blackjack.js" onClose={onClose3}>
                     <Slider images={blackjackImages} active={active3} setActive={setActive3} />
                 </Modal>
