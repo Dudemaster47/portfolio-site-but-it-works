@@ -38,9 +38,13 @@ const Slider = ({ images, active, setActive }) => {
 const Slide = ({ image_url, caption, body, link, gitLink, active }) => {
     return (
         <div className={`slide ${active ? "active" : ""}`}>
-            <img src={image_url} alt={caption} />
+            <div className="sliderInner">
+                <div className="sliderText">
+                    <p>{body}</p>
+                </div>
+                <img src={image_url} alt={caption} />
+            </div>
             <span>{caption}</span>
-            <p>{body}</p>
             <Link to={link}>Website</Link>
             <Link to={gitLink}>Github</Link>
         </div>

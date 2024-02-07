@@ -46,28 +46,43 @@ function ProjectLinks() {
         {
             image_url: `${homecookedSplash}`,
             caption: "Homecooked Splash Page",
-            body: "Homecooked was a group project developed in React-Redux with a Flask backend, a collective effort between myself, Megha Saghal, and Dan Yoo. Our concept was to make a combination of Doordash and Etsy; essentially, a place where you could create a store and sell your own home-cooked meals so that people could order out and still get that taste of home. This project was a major success, as we were able to implement four major CRUDS within the one-month period we had to work together: The ability to create a user account, the ability to view other users' stores (which also display their proximity to your location) and add meals to your cart as well as leaving reviews on selected dishes, the ability to create and edit your own store, and the ability to fill a cart and check out with your order. We also added a functional search feature, allowing users to search for a specific meal in order to find the right store for them. The logo was designed by yours truly, and a good deal of the interactivity and design elements utilized were a collaboration between myself and Dan Yoo.",
+            body: "Homecooked was a group project developed in React-Redux with a Flask backend, a collective effort between myself, Megha Saghal, and Dan Yoo. Our concept was to make a combination of Doordash and Etsy; essentially, a place where you could create a store and sell your own home-cooked meals so that people could order out and still get that taste of home. This project was a major success, as we were able to implement all of our goals within the one-month period we had assigned to it. ",
             link: "https://home-cooked.onrender.com/",
             gitLink: "https://github.com/kympanic/homecooked/"
         },
         {
             image_url: `${homecookedProfile}`,
             caption: "Homecooked Profile Page",
-            body: "",
+            body: `Prominent Features of the app include:
+            - Create an multi-role account allowing a user to be a customer or a store owner
+            - Search for stores by product type
+            - Display stores based on proximity to user
+            - Purchase meals from other users
+            - Review food items
+            - Set up a virtual storefront to sell your own meals `,
             link: "https://home-cooked.onrender.com/",
             gitLink: "https://github.com/kympanic/homecooked/"
         },
         {
             image_url: `${homecookedShop}`,
             caption: "Homecooked Shop Page",
-            body: "",
+            body: `My role in the project included:
+            - Project Planning
+            - Logo Design
+            - Wireframe Drafting
+            - Webpage Design
+            - CSS Style Guide & Touch Ups `,
             link: "https://home-cooked.onrender.com/",
             gitLink: "https://github.com/kympanic/homecooked/"
         },
         {
             image_url: `${homecookedCart}`,
             caption: "Homecooked Cart Page",
-            body: "",
+            body: `Several major challenges included:
+            - Coordinating the group so we each tackled different problems independently
+            - Collaborating to help partners with bugfixing
+            - Unifying individual styles to work together
+            - The Cart feature took a lot of trial and error, but after a lot of research and perseverance I was able to cleanly implement it.`,
             link: "https://home-cooked.onrender.com/",
             gitLink: "https://github.com/kympanic/homecooked/"
         }
@@ -77,7 +92,7 @@ function ProjectLinks() {
         {
             image_url: `${cardGameSplash}`,
             caption: "Card Games!! Splash Page",
-            body: "",
+            body: "Card Games!! was my portfolio project, intended to highlight my mastery of React-Redux. The intent was very simple; a website where you could play a variety of card games against a computer opponent or other players. Ultimately, I did not meet all of my goals due to the surprising level of difficulty involved in such a project, and the result is unfortunately bare-bones but functional as a single player experience. While multiplayer functionality proved too complex to implement, a single player card game (War) was developed and is fully playable- making it function within a React-Redux framework was a feat in of itself. ",
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
 
@@ -85,21 +100,34 @@ function ProjectLinks() {
         {
             image_url: `${cardGameProfile}`,
             caption: "Card Games!! Profile Page",
-            body: "",
+            body: `Prominent features include:
+            - One playable game mode (War), single player versus a CPU opponent
+            - Game is on a timer to prevent endless play, the user can adjust the timer to their liking
+            - Game can be paused and exited out of; the game remembers where it is left and will pick up where it is left off
+            - Forfeiting is an option to quickly end a game
+            - The art on the player's deck is customizable
+            - Win and Loss statistics are tracked per user`,
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
         },
         {
             image_url: `${cardGameHelp}`,
             caption: "Card Games!! Help Page",
-            body: "",
+            body: `Coding highlights included:
+            - It turns out using React Redux and simple Javascript to make a web-based video game, even a simple one, is actually very difficult
+            - The tools that React has to dynamically update webpages do not play well with things that need to update multiple times within a single function. The entire game is almost all javascript being used to update numerous variables almost constantly before feeding the final results into the React framework.
+            - The fact that it is fully functional and bug-free is a massive accomplishment of software engineering. And perseverence.`,
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
         },
         {
             image_url: `${cardGameGame}`,
             caption: "Card Games!! Game Page",
-            body: "",
+            body: `Challenges included:
+            - REACT REDUX IS THE WRONG FRAMEWORK TO DESIGN A VIDEO GAME IN
+            - Ultimately this project did not reach the level I wanted it to because it became far too cumbersome to expand it further than the single player experience due to the above reason
+            - Other desired features would have required an almost total overhaul of much of the back end
+            - Honestly if I were to revisit this, I would in fact start entirely from scratch and have the game be its own, separate program hosted by the app rather than built into it.`,
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
         }
@@ -109,28 +137,37 @@ function ProjectLinks() {
         {
             image_url: `${blackjackStart}`,
             caption: "Blackjack Start Ascii",
-            body: "",
+            body: 'A simple, class-based javascript project designed to run purely in the console, requiring NodeJS to play. Able to recognize multiple players, make calculations on the fly, and track progress across multiple hands, the game is more or less feature complete and fully polished. The game is prompt-based and deterministic, allowing players to bet "money" to try and get a high score. High scores are not tracked.',
             link: "",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
             image_url: `${blackjackBet}`,
             caption: "Blackjack Betting Prompt",
-            body: "",
+            body: `Prominent features include:
+            - Play text-based blackjack in your command line!
+            - Host it in a stream or gather up to 7 friends around your computer for local multiplayer!
+            - You can bet! Play for a high score or until you run out of fake money!
+            - The Dealer is always a CPU, no pesky card shuffling needed!`,
             link: "",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
             image_url: `${blackjackCommands}`,
             caption: "Blackjack Help Dialog",
-            body: "",
+            body: `Coding highlights included:
+            - Utilizes classes to handle players, cards, and decks
+            - Functions are tied to classes, allowing for the complex game code to be quickly parsed and understood`,
             link: "",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
             image_url: `${blackjackEnd}`,
             caption: "Blackjack End Ascii",
-            body: "",
+            body: `Challenges included:
+            - Most of this was done solo
+            - The game is fairly complex and prompt-based with branching outcomes, making the code itself difficult to read
+            - It broke inexplicably after not having been touched for several months, requiring an unexpected bugfix.`,
             link: "",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         }

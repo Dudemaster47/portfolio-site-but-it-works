@@ -10,7 +10,7 @@ const Modal = ({ children, show, onClose, title }) => {
                         <div className="modalHeader">
                             <div className="modalTitle">{title}</div>
                             <div onClick={onClose} className="modalClose">
-                                X
+                            ✕
                             </div>
                         </div>
                         <div className="modalBody">{children}</div>

@@ -2,7 +2,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
   }
@@ -13,7 +13,7 @@
     box-shadow: 0px 2px 6px #000;
     position: fixed;
     width: 100%;
-    max-width: 500px;
+    max-width: 1750px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -24,6 +24,7 @@
   .modalHeader {
     display: flex;
     align-items: center;
+    font-family: 'Josefin Sans';
     justify-content: space-between;
     margin-bottom: 10px;
   }

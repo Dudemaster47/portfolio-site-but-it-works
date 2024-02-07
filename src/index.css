@@ -52,6 +52,8 @@ code {
   background: #c6eeee;
   box-shadow: 0px 2px 2px #0f434a;
   position: absolute;
+  top: 2px;
+  left: 2px;
   border-radius: 50px;
   border: 4px inset #8daae7;
   padding: 0.25%;
