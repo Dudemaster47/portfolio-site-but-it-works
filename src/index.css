@@ -627,9 +627,18 @@ a {
   z-index: 0;
 }
 
+.projectInnerOff {
+  width: 30%;
+  z-index: 0;
+}
+
 .projectInner:hover {
   z-index: 10;
   cursor: pointer;
+}
+
+.projectInnerOff:hover {
+  z-index: 0;
 }
 
 .projectInner:hover .projectDemo {
@@ -638,6 +647,11 @@ a {
   z-index: 10;
   transition: all 0.25s ease;
   box-shadow: 2px 7px 7px #0f434a;
+}
+
+.projectInner:hover .projectDemoOff {
+  opacity: 60%;
+  z-index: 0;
 }
 
 .projectInner:hover .projectHeader {
@@ -655,7 +669,33 @@ a {
   transition: all 0.25s ease;
 }
 
+.projectDemoOff {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px #0f434a;
+  opacity: 60%;
+  z-index: 0;
+}
+
 .projectHeader {
+  padding: 0.5%;
+  color: white;
+  text-shadow: 
+    2px 2px black,
+    -1px 2px black,
+    1px -1px black,
+    -1px -1px black;
+  width: 10%;
+  text-align: center;
+  transition: all 0.25s ease;
+  position: fixed;
+  z-index: 1;
+  margin: 10% 8.5%;
+}
+
+.projectHeaderOff {
   padding: 0.5%;
   color: white;
   text-shadow: 

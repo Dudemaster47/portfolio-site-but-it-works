@@ -41,6 +41,7 @@ function ProjectLinks() {
     const [active1, setActive1] = useState(0);
     const [active2, setActive2] = useState(0);
     const [active3, setActive3] = useState(0);
+    const [allowClick, setAllowClick] = useState(true);
 
     const homecookedImages = [
         {
@@ -53,12 +54,12 @@ function ProjectLinks() {
         {
             image_url: `${homecookedProfile}`,
             caption: "Homecooked Profile Page",
-            body: `Prominent Features of the app include:
-            - Create an multi-role account allowing a user to be a customer or a store owner
-            - Search for stores by product type
-            - Display stores based on proximity to user
-            - Purchase meals from other users
-            - Review food items
+            body: `Prominent Features of the app include:\n
+            - Create a multi-role account allowing a user to be a customer or a store owner\n
+            - Search for stores by product type\n
+            - Display stores based on proximity to user\n
+            - Purchase meals from other users\n
+            - Review food items\n
             - Set up a virtual storefront to sell your own meals `,
             link: "https://home-cooked.onrender.com/",
             gitLink: "https://github.com/kympanic/homecooked/"
@@ -66,11 +67,11 @@ function ProjectLinks() {
         {
             image_url: `${homecookedShop}`,
             caption: "Homecooked Shop Page",
-            body: `My role in the project included:
-            - Project Planning
-            - Logo Design
-            - Wireframe Drafting
-            - Webpage Design
+            body: `My role in the project included:\n
+            - Project Planning\n
+            - Logo Design\n
+            - Wireframe Drafting\n
+            - Webpage Design\n
             - CSS Style Guide & Touch Ups `,
             link: "https://home-cooked.onrender.com/",
             gitLink: "https://github.com/kympanic/homecooked/"
@@ -78,10 +79,10 @@ function ProjectLinks() {
         {
             image_url: `${homecookedCart}`,
             caption: "Homecooked Cart Page",
-            body: `Several major challenges included:
-            - Coordinating the group so we each tackled different problems independently
-            - Collaborating to help partners with bugfixing
-            - Unifying individual styles to work together
+            body: `Several major challenges included:\n
+            - Coordinating the group so we each tackled different problems independently\n
+            - Collaborating to help partners with bugfixing\n
+            - Unifying individual styles to work together\n
             - The Cart feature took a lot of trial and error, but after a lot of research and perseverance I was able to cleanly implement it.`,
             link: "https://home-cooked.onrender.com/",
             gitLink: "https://github.com/kympanic/homecooked/"
@@ -100,12 +101,12 @@ function ProjectLinks() {
         {
             image_url: `${cardGameProfile}`,
             caption: "Card Games!! Profile Page",
-            body: `Prominent features include:
-            - One playable game mode (War), single player versus a CPU opponent
-            - Game is on a timer to prevent endless play, the user can adjust the timer to their liking
-            - Game can be paused and exited out of; the game remembers where it is left and will pick up where it is left off
-            - Forfeiting is an option to quickly end a game
-            - The art on the player's deck is customizable
+            body: `Prominent features include:\n
+            - One playable game mode (War), single player versus a CPU opponent\n
+            - Game is on a timer to prevent endless play, the user can adjust the timer to their liking\n
+            - Game can be paused and exited out of; the game remembers where it is left and will pick up where it is left off\n
+            - Forfeiting is an option to quickly end a game\n
+            - The art on the player's deck is customizable\n
             - Win and Loss statistics are tracked per user`,
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
@@ -113,9 +114,9 @@ function ProjectLinks() {
         {
             image_url: `${cardGameHelp}`,
             caption: "Card Games!! Help Page",
-            body: `Coding highlights included:
-            - It turns out using React Redux and simple Javascript to make a web-based video game, even a simple one, is actually very difficult
-            - The tools that React has to dynamically update webpages do not play well with things that need to update multiple times within a single function. The entire game is almost all javascript being used to update numerous variables almost constantly before feeding the final results into the React framework.
+            body: `Coding highlights included:\n
+            - It turns out using React Redux and simple Javascript to make a web-based video game, even a simple one, is actually very difficult\n
+            - The tools that React has to dynamically update webpages do not play well with things that need to update multiple times within a single function. The entire game is almost all javascript being used to update numerous variables almost constantly before feeding the final results into the React framework.\n
             - The fact that it is fully functional and bug-free is a massive accomplishment of software engineering. And perseverence.`,
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
@@ -123,10 +124,10 @@ function ProjectLinks() {
         {
             image_url: `${cardGameGame}`,
             caption: "Card Games!! Game Page",
-            body: `Challenges included:
-            - REACT REDUX IS THE WRONG FRAMEWORK TO DESIGN A VIDEO GAME IN
-            - Ultimately this project did not reach the level I wanted it to because it became far too cumbersome to expand it further than the single player experience due to the above reason
-            - Other desired features would have required an almost total overhaul of much of the back end
+            body: `Challenges included:/n
+            - REACT REDUX IS THE WRONG FRAMEWORK TO DESIGN A VIDEO GAME IN\n
+            - Ultimately this project did not reach the level I wanted it to because it became far too cumbersome to expand it further than the single player experience due to the above reason\n
+            - Other desired features would have required an almost total overhaul of much of the back end\n
             - Honestly if I were to revisit this, I would in fact start entirely from scratch and have the game be its own, separate program hosted by the app rather than built into it.`,
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
@@ -144,10 +145,10 @@ function ProjectLinks() {
         {
             image_url: `${blackjackBet}`,
             caption: "Blackjack Betting Prompt",
-            body: `Prominent features include:
-            - Play text-based blackjack in your command line!
-            - Host it in a stream or gather up to 7 friends around your computer for local multiplayer!
-            - You can bet! Play for a high score or until you run out of fake money!
+            body: `Prominent features include:\n
+            - Play text-based blackjack in your command line!\n
+            - Host it in a stream or gather up to 7 friends around your computer for local multiplayer!\n
+            - You can bet! Play for a high score or until you run out of fake money!\n
             - The Dealer is always a CPU, no pesky card shuffling needed!`,
             link: "",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
@@ -155,8 +156,8 @@ function ProjectLinks() {
         {
             image_url: `${blackjackCommands}`,
             caption: "Blackjack Help Dialog",
-            body: `Coding highlights included:
-            - Utilizes classes to handle players, cards, and decks
+            body: `Coding highlights included:\n
+            - Utilizes classes to handle players, cards, and decks\n
             - Functions are tied to classes, allowing for the complex game code to be quickly parsed and understood`,
             link: "",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
@@ -164,9 +165,9 @@ function ProjectLinks() {
         {
             image_url: `${blackjackEnd}`,
             caption: "Blackjack End Ascii",
-            body: `Challenges included:
-            - Most of this was done solo
-            - The game is fairly complex and prompt-based with branching outcomes, making the code itself difficult to read
+            body: `Challenges included:\n
+            - Most of this was done solo\n
+            - The game is fairly complex and prompt-based with branching outcomes, making the code itself difficult to read\n
             - It broke inexplicably after not having been touched for several months, requiring an unexpected bugfix.`,
             link: "",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
@@ -176,28 +177,34 @@ function ProjectLinks() {
     const handleClick1 = (index) => {
         setActive1(0);
         setShow1(true);
+        setAllowClick(false);
     };
 
     const handleClick2 = (index) => {
         setActive2(0);
         setShow2(true);
+        setAllowClick(false);
     };
 
     const handleClick3 = (index) => {
         setActive3(0);
         setShow3(true);
+        setAllowClick(false);
     };
 
     const onClose1 = () => {
         setShow1(false);
+        setAllowClick(true);
     };
 
     const onClose2 = () => {
         setShow2(false);
+        setAllowClick(true);
     };
 
     const onClose3 = () => {
         setShow3(false);
+        setAllowClick(true);
     };
 
     return (
@@ -211,23 +218,23 @@ function ProjectLinks() {
                 </div>
             </div>
             <div className="projectBox">
-                <div class="projectInner" onClick={handleClick1}>
-                    <h2 className="projectHeader" id="P1">Homecooked</h2>
-                    <img className="projectDemo" src={homecookedSplash} alt="Click to open the Homecooked modal" />
+                <div class={allowClick ? "projectInner" : "projectInnerOff"} onClick={allowClick ? (handleClick1) : null}>
+                    <h2 className={allowClick ? "projectHeader" : "projectHeaderOff"} id="P1">Homecooked</h2>
+                    <img className={allowClick ? "projectDemo" : "projectDemoOff"} src={homecookedSplash} alt="Click to open the Homecooked modal" />
                 </div>
                 <Modal show={show1} title="Homecooked" onClose={onClose1}>
                     <Slider images={homecookedImages} active={active1} setActive={setActive1} />
                 </Modal>
-                <div class="projectInner" onClick={handleClick2}>
-                    <h2 className="projectHeader" id="P2">Card Games!!</h2>
-                    <img className="projectDemo" src={cardGameSplash} alt="Click to open the Card Games!! modal" />
+                <div class={allowClick ? "projectInner" : "projectInnerOff"} onClick={allowClick ? (handleClick2) : null}>
+                    <h2 className={allowClick ? "projectHeader" : "projectHeaderOff"} id="P2">Card Games!!</h2>
+                    <img className={allowClick ? "projectDemo" : "projectDemoOff"} src={cardGameSplash} alt="Click to open the Card Games!! modal" />
                 </div>
                 <Modal show={show2} title="Card Games!!" onClose={onClose2}>
                     <Slider images={cardgameImages} active={active2} setActive={setActive2} />
                 </Modal>
-                <div class="projectInner" onClick={handleClick3}>
-                    <h2 className="projectHeader" id="P3">Blackjack.JS</h2>
-                    <img className="projectDemo" src={blackjackStart} alt="Click to open the Blackjack.JS modal" />
+                <div class={allowClick ? "projectInner" : "projectInnerOff"} onClick={allowClick ? (handleClick3) : null}>
+                    <h2 className={allowClick ? "projectHeader" : "projectHeaderOff"} id="P3">Blackjack.JS</h2>
+                    <img className={allowClick ? "projectDemo" : "projectDemoOff"} src={blackjackStart} alt="Click to open the Blackjack.JS modal" />
                 </div>
                 <Modal show={show3} title="Blackjack.js" onClose={onClose3}>
                     <Slider images={blackjackImages} active={active3} setActive={setActive3} />
