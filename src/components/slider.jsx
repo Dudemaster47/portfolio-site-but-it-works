@@ -36,17 +36,26 @@ const Slider = ({ images, active, setActive }) => {
 };
 
 const Slide = ({ image_url, caption, body, link, gitLink, active }) => {
+    let linkVar = true;
+    if (link === "null"){
+        linkVar = false;
+    }
+
     return (
         <div className={`slide ${active ? "active" : ""}`}>
             <div className="sliderInner">
                 <div className="sliderText">
                     <p>{body}</p>
                 </div>
-                <img src={image_url} alt={caption} />
+                <div className="sliderImg">
+                    <img src={image_url} alt={caption} />
+                    <span className="caption">{caption}</span>
+                </div>
             </div>
-            <span>{caption}</span>
-            <Link to={link}>Website</Link>
-            <Link to={gitLink}>Github</Link>
+            <div className="slideLinks">
+                {linkVar ? (<Link className="webLink" to={link}>Website</Link>) : null}
+                <Link className="webLink" to={gitLink}>Github</Link>
+            </div>
         </div>
     );
 };

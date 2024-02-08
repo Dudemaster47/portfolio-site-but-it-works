@@ -124,7 +124,7 @@ function ProjectLinks() {
         {
             image_url: `${cardGameGame}`,
             caption: "Card Games!! Game Page",
-            body: `Challenges included:/n
+            body: `Challenges included:\n
             - REACT REDUX IS THE WRONG FRAMEWORK TO DESIGN A VIDEO GAME IN\n
             - Ultimately this project did not reach the level I wanted it to because it became far too cumbersome to expand it further than the single player experience due to the above reason\n
             - Other desired features would have required an almost total overhaul of much of the back end\n
@@ -139,7 +139,7 @@ function ProjectLinks() {
             image_url: `${blackjackStart}`,
             caption: "Blackjack Start Ascii",
             body: 'A simple, class-based javascript project designed to run purely in the console, requiring NodeJS to play. Able to recognize multiple players, make calculations on the fly, and track progress across multiple hands, the game is more or less feature complete and fully polished. The game is prompt-based and deterministic, allowing players to bet "money" to try and get a high score. High scores are not tracked.',
-            link: "",
+            link: "null",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
@@ -150,7 +150,7 @@ function ProjectLinks() {
             - Host it in a stream or gather up to 7 friends around your computer for local multiplayer!\n
             - You can bet! Play for a high score or until you run out of fake money!\n
             - The Dealer is always a CPU, no pesky card shuffling needed!`,
-            link: "",
+            link: "null",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
@@ -159,7 +159,7 @@ function ProjectLinks() {
             body: `Coding highlights included:\n
             - Utilizes classes to handle players, cards, and decks\n
             - Functions are tied to classes, allowing for the complex game code to be quickly parsed and understood`,
-            link: "",
+            link: "null",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         },
         {
@@ -169,7 +169,7 @@ function ProjectLinks() {
             - Most of this was done solo\n
             - The game is fairly complex and prompt-based with branching outcomes, making the code itself difficult to read\n
             - It broke inexplicably after not having been touched for several months, requiring an unexpected bugfix.`,
-            link: "",
+            link: "null",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         }
     ];
