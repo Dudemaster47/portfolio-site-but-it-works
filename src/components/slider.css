@@ -15,7 +15,7 @@
   
   @keyframes fade {
     from {
-      opacity: 0.4;
+      opacity: 0.9;
     }
     to {
       opacity: 1;
@@ -112,25 +112,63 @@
   .sliderText {
     white-space: pre-line;
     margin-right: 2.5%;
-  }
-
-  .slideLinks a{
-    color: black;
-  }
-
-  .slideLinks a:visited {
-    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(202, 255, 246);
+    padding: 2%;
+    box-shadow: 1px 1px rgb(35, 52, 57);
+    overflow-y: auto;
   }
 
   .slideLinks {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  .webLink {
-    width: 5%;
+  .webLink:link {
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+    text-shadow: 1px -1px black,
+    -1px 1px black,
+    1px 1px black,
+    -1px -1px black;
+    width: 7%;
+    padding: 0.5%;
+    border-radius: 10px;
+    margin: 0.5%;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 1px 1px rgb(35, 52, 57);
+    background: radial-gradient(ellipse, lightblue 20%, rgb(136, 201, 223) 50%, rgb(109, 171, 192) 78%, rgb(101, 138, 132));
+    transition: all 0.2s ease;
   }
 
   .webLink:hover {
     text-decoration: underline;
+    background: radial-gradient(ellipse, lightblue 40%, rgb(136, 201, 223) 70%, rgb(109, 171, 192));
+    transform: scale(1.05, 1.05);
+    transition: all 0.2s ease;
+  }
+
+  .webLink:hover:focus {
+    text-decoration: underline;
+    background: radial-gradient(ellipse, rgb(101, 138, 132) 20%, rgb(109, 171, 192) 50%, rgb(136, 201, 223) 78%, lightblue);
+  }
+  
+  .webLink:visited {
+    width: 7%;
+    padding: 0.5%;
+    border-radius: 10px;
+    margin: 0.5%;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 1px 1px rgb(35, 52, 57);
+    background: radial-gradient(ellipse, lightblue 20%, rgb(136, 201, 223) 50%, rgb(109, 171, 192) 78%, rgb(101, 138, 132));
+    transition: all 0.2s ease;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 1px -1px black,
+    -1px 1px black,
+    1px 1px black,
+    -1px -1px black;
   }

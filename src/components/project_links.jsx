@@ -125,7 +125,7 @@ function ProjectLinks() {
             image_url: `${cardGameGame}`,
             caption: "Card Games!! Game Page",
             body: `Challenges included:\n
-            - REACT REDUX IS THE WRONG FRAMEWORK TO DESIGN A VIDEO GAME IN\n
+            - REACT REDUX IS THE WRONG FRAMEWORK FOR DESIGNING GAMES\n
             - Ultimately this project did not reach the level I wanted it to because it became far too cumbersome to expand it further than the single player experience due to the above reason\n
             - Other desired features would have required an almost total overhaul of much of the back end\n
             - Honestly if I were to revisit this, I would in fact start entirely from scratch and have the game be its own, separate program hosted by the app rather than built into it.`,
