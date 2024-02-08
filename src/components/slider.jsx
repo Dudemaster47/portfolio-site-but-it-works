@@ -1,5 +1,11 @@
 import "./slider.css"
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { faRightLong } from "@fortawesome/free-solid-svg-icons";
+
+const leftArr = <FontAwesomeIcon icon={faLeftLong} />;
+const rightArr = <FontAwesomeIcon icon={faRightLong} />;
 
 const Slider = ({ images, active, setActive }) => {
     const onNext = () => {
@@ -24,10 +30,10 @@ const Slider = ({ images, active, setActive }) => {
             <div className="slideNav">
                 <div className="slideNav-next-prev">
                     <div className="next-prev prev" onClick={onPrev}>
-                        {" "}&lt;{" "}
+                        {leftArr}
                     </div>
                     <div className="next-prev next" onClick={onNext}>
-                        {" "}&gt;{" "}
+                        {rightArr}
                     </div>
                 </div>
             </div>

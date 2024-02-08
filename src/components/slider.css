@@ -11,6 +11,7 @@
   .slide {
     position: relative;
     display: none;
+    font-family: 'Josefin Sans'
   }
   
   @keyframes fade {
@@ -34,15 +35,27 @@
     flex-direction: column;
   }
   
-  .sliderImg span {
-    transform: translateX(-50%);
-    color: #000;
-    margin-left: 55%;
-  }
-  
   .sliderImg img {
     width: auto;
     max-height: 30vh;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 1px rgb(11, 4, 54);
+  }
+
+  .caption {
+    width: 100%;
+    background-color: rgb(114, 138, 173);
+    color: white;
+    text-shadow: 1px -1px black,
+    -1px 1px black,
+    1px 1px black,
+    -1px -1px black;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid rgb(11, 4, 54);
+    box-shadow: 1px 1px rgb(11, 4, 54);
   }
   
   .slideNav-bottom {
@@ -64,19 +77,51 @@
   
   .slideNav-next-prev .next-prev {
     position: absolute;
-    top: 50%;
-    font-size: 3em;
+    top: 47%;
+    font-size: 2em;
     cursor: pointer;
+    color: rgb(114, 138, 173);
     transform: translateY(-100%);
     z-index: 10000;
+    background-color: rgb(11, 4, 54);
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px rgb(77, 243, 215),
+    -2px 2px 2px rgb(202, 255, 246),
+    2px -2px 2px rgb(202, 255, 246),
+    -2px -2px 2px rgb(77, 243, 215);
+    transition: all 0.25s ease;
   }
   
   .next {
-    right: -50px;
+    right: -75px;
+  }
+
+  .next:hover {
+    color: rgb(11, 4, 54);
+    background-color: rgb(114, 138, 173);
+    box-shadow: 2px 2px 2px rgb(202, 255, 246),
+    -2px 2px 2px rgb(77, 243, 215),
+    2px -2px 2px rgb(77, 243, 215),
+    -2px -2px 2px rgb(202, 255, 246);
+    transition: all 0.25s ease;
   }
   
   .prev {
-    left: -50px;
+    left: -75px;
+  }
+
+  .prev:hover {
+    color: rgb(11, 4, 54);
+    background-color: rgb(114, 138, 173);
+    box-shadow: 2px 2px 2px rgb(202, 255, 246),
+    -2px 2px 2px rgb(77, 243, 215),
+    2px -2px 2px rgb(77, 243, 215),
+    -2px -2px 2px rgb(202, 255, 246);
+    transition: all 0.25s ease;
   }
   
   .imageList {
@@ -112,12 +157,12 @@
   .sliderText {
     white-space: pre-line;
     margin-right: 2.5%;
-    border: 1px solid black;
     border-radius: 10px;
     background-color: rgb(202, 255, 246);
     padding: 2%;
     box-shadow: 1px 1px rgb(35, 52, 57);
     overflow-y: auto;
+    text-align: left;
   }
 
   .slideLinks {
@@ -134,9 +179,10 @@
     -1px -1px black;
     width: 7%;
     padding: 0.5%;
+    padding-top: 1%;
     border-radius: 10px;
     margin: 0.5%;
-    border: 1px solid black;
+    margin-top: 0.75%;
     text-align: center;
     box-shadow: 1px 1px rgb(35, 52, 57);
     background: radial-gradient(ellipse, lightblue 20%, rgb(136, 201, 223) 50%, rgb(109, 171, 192) 78%, rgb(101, 138, 132));
@@ -150,9 +196,9 @@
     transition: all 0.2s ease;
   }
 
-  .webLink:hover:focus {
+  .webLink:focus:hover {
     text-decoration: underline;
-    background: radial-gradient(ellipse, rgb(101, 138, 132) 20%, rgb(109, 171, 192) 50%, rgb(136, 201, 223) 78%, lightblue);
+    background: radial-gradient(ellipse, rgb(101, 138, 132) 20%, rgb(109, 171, 192) 50%, rgb(136, 201, 223) 90%, lightblue);
   }
   
   .webLink:visited {
@@ -160,7 +206,6 @@
     padding: 0.5%;
     border-radius: 10px;
     margin: 0.5%;
-    border: 1px solid black;
     text-align: center;
     box-shadow: 1px 1px rgb(35, 52, 57);
     background: radial-gradient(ellipse, lightblue 20%, rgb(136, 201, 223) 50%, rgb(109, 171, 192) 78%, rgb(101, 138, 132));

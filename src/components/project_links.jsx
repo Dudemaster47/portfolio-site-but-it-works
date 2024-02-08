@@ -47,7 +47,7 @@ function ProjectLinks() {
         {
             image_url: `${homecookedSplash}`,
             caption: "Homecooked Splash Page",
-            body: "Homecooked was a group project developed in React-Redux with a Flask backend, a collective effort between myself, Megha Saghal, and Dan Yoo. Our concept was to make a combination of Doordash and Etsy; essentially, a place where you could create a store and sell your own home-cooked meals so that people could order out and still get that taste of home. This project was a major success, as we were able to implement all of our goals within the one-month period we had assigned to it. ",
+            body: "Overview:\n Homecooked was a group project developed in React-Redux with a Flask backend, a collective effort between myself, Megha Saghal, and Dan Yoo. Our concept was to make a combination of Doordash and Etsy; essentially, a place where you could create a store and sell your own home-cooked meals so that people could order out and still get that taste of home. This project was a major success, as we were able to implement all of our goals within the one-month period we had assigned to it. ",
             link: "https://home-cooked.onrender.com/",
             gitLink: "https://github.com/kympanic/homecooked/"
         },
@@ -93,7 +93,7 @@ function ProjectLinks() {
         {
             image_url: `${cardGameSplash}`,
             caption: "Card Games!! Splash Page",
-            body: "Card Games!! was my portfolio project, intended to highlight my mastery of React-Redux. The intent was very simple; a website where you could play a variety of card games against a computer opponent or other players. Ultimately, I did not meet all of my goals due to the surprising level of difficulty involved in such a project, and the result is unfortunately bare-bones but functional as a single player experience. While multiplayer functionality proved too complex to implement, a single player card game (War) was developed and is fully playable- making it function within a React-Redux framework was a feat in of itself. ",
+            body: "Overview:\n Card Games!! was my portfolio project, intended to highlight my mastery of React-Redux. The intent was very simple; a website where you could play a variety of card games against a computer opponent or other players. Ultimately, I did not meet all of my goals due to the surprising level of difficulty involved in such a project, and the result is unfortunately bare-bones but functional as a single player experience. While multiplayer functionality proved too complex to implement, a single player card game (War) was developed and is fully playable- making it function within a React-Redux framework was a feat in of itself. ",
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
 
@@ -138,7 +138,7 @@ function ProjectLinks() {
         {
             image_url: `${blackjackStart}`,
             caption: "Blackjack Start Ascii",
-            body: 'A simple, class-based javascript project designed to run purely in the console, requiring NodeJS to play. Able to recognize multiple players, make calculations on the fly, and track progress across multiple hands, the game is more or less feature complete and fully polished. The game is prompt-based and deterministic, allowing players to bet "money" to try and get a high score. High scores are not tracked.',
+            body: 'Overview:\n A simple, class-based javascript project designed to run purely in the console, requiring NodeJS to play. Able to recognize multiple players, make calculations on the fly, and track progress across multiple hands, the game is more or less feature complete and fully polished. The game is prompt-based and deterministic, allowing players to bet "money" to try and get a high score. High scores are not tracked.',
             link: "null",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         },

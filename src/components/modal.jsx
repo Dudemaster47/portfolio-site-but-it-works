@@ -8,10 +8,13 @@ const Modal = ({ children, show, onClose, title }) => {
                 <div className="modalWrapper">
                     <div className="modalContent">
                         <div className="modalHeader">
-                            <div className="modalTitle">{title}</div>
-                            <div onClick={onClose} className="modalClose">
-                            ✕
+                            <div className="modalTitle">
+                                <div className="titleBox">{title}</div>
+                                <div onClick={onClose} className="modalClose">
+                                    ✕
+                                </div>
                             </div>
+
                         </div>
                         <div className="modalBody">{children}</div>
                     </div>

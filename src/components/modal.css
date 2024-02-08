@@ -8,8 +8,8 @@
   }
   
   .modalWrapper {
-    padding: 10px;
     margin: 10px auto;
+    padding-bottom: 10px;
     box-shadow: 0px 2px 6px #000;
     border-radius: 20px;
     position: fixed;
@@ -22,6 +22,7 @@
     transform: translate(-50%, -50%);
     z-index: 11111;
     background-color: #99d0d2;
+    overflow: hidden;
   }
   
   .modalHeader {
@@ -35,11 +36,40 @@
   .modalClose {
     text-align: center;
     font-size: 1.2em;
-    cursor: pointer;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: gray;
-    line-height: 1.7em;
+    background-color: rgb(114, 138, 173)y;
+    line-height: 1.2em;
     color: #fff;
+    transition: all 1s ease;
+  }
+
+  .modalClose:hover {
+    cursor: pointer;
+    transform: rotate(4turn) scale(1.5, 1.5);
+    transition: all 1s ease;
+  }
+
+  .modalTitle {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    background-color: rgb(114, 138, 173);
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 46%;
+    padding-right: 1%;
+    text-align: center;
+    box-shadow: 0px 0px 1px rgb(11, 4, 54);
+    font-size: 1.2em;
+    text-shadow: 1px -1px black,
+    -1px 1px black,
+    1px 1px black,
+    -1px -1px black;
+  }
+
+  .titleBox {
+    font-size: 1.3em;
   }
