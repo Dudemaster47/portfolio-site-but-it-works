@@ -149,55 +149,6 @@ a {
     transform: scale(1.05, 1.1);
 }
 
-.skillbox {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background: #1b2b88;
-    color: white;
-    padding: 2%;
-    border-radius: 25px;
-    box-shadow: 0px 5px 5px rgb(0, 0, 0);
-}
-
-.skillheader {
-    border: solid black 1px;
-    padding: 0.33%;
-    border-radius: 5px;
-    background: white;
-    color: black;
-    width: 18%;
-    text-align: center;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-.skillbox ul {
-    max-width: max-content;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 1.5s;
-}
-
-.skillbox ul li {
-    text-decoration: none;
-    overflow: hidden;
-    white-space: nowrap;
-    letter-spacing: 0.01em;
-}
-
-.skillheader:hover {
-    cursor: pointer;
-}
-
-.skillheader:hover + ul {
-    max-height: 250px;
-}
-
-.skillheader:hover + ul li {
-    animation: type 2s steps(100, end);
-}
-
 @keyframes type {
     from {
         width: 0;
@@ -830,4 +781,8 @@ a {
     margin-left: 0;
     min-height: 40vh;
     padding-top: 2%;
+}
+
+.skillText {
+    margin-left: -10%;
 }

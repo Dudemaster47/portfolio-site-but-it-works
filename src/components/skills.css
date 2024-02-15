@@ -1,0 +1,8 @@
+.resHeader {
+    margin-left: -10%;
+}
+
+.skillWrapper {
+    display: flex;
+    flex-direction: row;
+}
