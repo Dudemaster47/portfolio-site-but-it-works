@@ -54,12 +54,8 @@ function Skills() {
                         <ul className="resUL">
                             <li>
                                 Photodecomposition of Tetrachloroaurate in the
-                                Presence of Varied Alcoholic Solvents
+                                Presence of Varied Alcoholic Solvents | Research with Dr. Jesse Marcum 2017-2018
                             </li>
-                            <p>
-                                Undergraduate Research with Dr. Jesse Marcum |
-                                2017-2018
-                            </p>
                         </ul>
                     </div>
                 </div>
