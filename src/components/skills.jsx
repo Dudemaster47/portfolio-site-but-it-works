@@ -56,14 +56,14 @@ function Skills() {
                                 Photodecomposition of Tetrachloroaurate in the
                                 Presence of Varied Alcoholic Solvents
                             </li>
-                            <li>
+                            <p>
                                 Undergraduate Research with Dr. Jesse Marcum |
                                 2017-2018
-                            </li>
+                            </p>
                         </ul>
                     </div>
                 </div>
-                <div classname="skillColumn">
+                <div className="skillColumn">
                     <div className="compuList">
                         <h3>Computational Skills</h3>
                         <ul className="resUL">
