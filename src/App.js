@@ -7,6 +7,7 @@ import {Feedback} from './components/feedback';
 import ProjectLinks from './components/project_links';
 import Skills from './components/skills';
 import Splash from './components/splash';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route exact path="/" element={<Splash />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

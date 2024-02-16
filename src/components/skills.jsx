@@ -1,5 +1,6 @@
 import ashLogo from "../images/ash-logo.png";
 import "./skills.css";
+import ashresume from "../images/ashresume.pdf";
 
 function Skills() {
     //gotta overhaul this anyway so
@@ -12,28 +13,13 @@ function Skills() {
     return (
         <>
             <div className="headerbox">
-                <div className="miniLogoOuter">
-                    <img className="miniLogo" src={ashLogo} alt="logo" />
-                </div>
-                <div className="splashtext3 resHeader">
+                <div className="splashtext3">
                     <h1>Resume and Skills</h1>
                 </div>
             </div>
 
             <div className="skillWrapper">
                 <div className="resColumn">
-                    <div className="eduList">
-                        <h3>Education</h3>
-                        <ul className="resUL">
-                            <li>
-                                Bachelors of Science (Chemistry) | Framingham
-                                State University 2014-2019
-                            </li>
-                            <li>
-                                Software Development | App Academy 2022-2023
-                            </li>
-                        </ul>
-                    </div>
                     <div className="workList">
                         <h3>Work Experience</h3>
                         <ul className="resUL">
@@ -54,10 +40,28 @@ function Skills() {
                         <ul className="resUL">
                             <li>
                                 Photodecomposition of Tetrachloroaurate in the
-                                Presence of Varied Alcoholic Solvents | Research with Dr. Jesse Marcum 2017-2018
+                                Presence of Varied Alcoholic Solvents | Research
+                                with Dr. Jesse Marcum 2017-2018
                             </li>
                         </ul>
                     </div>
+                    <div className="eduList">
+                        <h3>Education</h3>
+                        <ul className="resUL">
+                            <li>
+                                Bachelors of Science (Chemistry) | Framingham
+                                State University 2014-2019
+                            </li>
+                            <li>
+                                Software Development | App Academy 2022-2023
+                            </li>
+                        </ul>
+                    </div>
+                    <a href={ashresume} download={"ashresume.pdf"} target="_blank">
+                        <div className="submitButton">
+                            <h3>Resumé Download</h3>
+                        </div>
+                    </a>
                 </div>
                 <div className="skillColumn">
                     <div className="compuList">
@@ -88,34 +92,6 @@ function Skills() {
                                 Chemicals
                             </li>
                             <li>Waste Management</li>
-                        </ul>
-                    </div>
-                    <div className="personList">
-                        <h3>Interpersonal Skills</h3>
-                        <ul className="resUL">
-                            <li>Funny</li>
-                            <li>Charming</li>
-                            <li>Good Team Player</li>
-                            <li>Caring</li>
-                            <li>Generous</li>
-                            <li>Has Worked Retail Before</li>
-                            <li>Loves Kids</li>
-                            <li>Loves Animals</li>
-                            <li>Follows Directions Well</li>
-                            <li>Keeps Head Down</li>
-                        </ul>
-                    </div>
-                    <div className="miscList">
-                        <h3>Miscellaneous Skills</h3>
-                        <ul className="resUL">
-                            <li>Black Belt</li>
-                            <li>Excellent Cook</li>
-                            <li>Musician</li>
-                            <li>Composer</li>
-                            <li>Artist</li>
-                            <li>Writer</li>
-                            <li>Tabletop Gaming Enthusiast</li>
-                            <li>Eternal Game Master (master of herding cats)</li>
                         </ul>
                     </div>
                 </div>

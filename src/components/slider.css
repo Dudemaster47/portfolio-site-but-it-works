@@ -163,6 +163,8 @@
     box-shadow: 1px 1px rgb(35, 52, 57);
     overflow-y: auto;
     text-align: left;
+    scrollbar-width: thin;
+    scrollbar-color: #8fbfe0 rgb(202, 255, 246);
   }
 
   .slideLinks {

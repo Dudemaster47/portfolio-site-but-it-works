@@ -283,7 +283,7 @@ a {
     text-shadow: -4px 4px black;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .logo {
@@ -324,7 +324,7 @@ a {
     white-space: nowrap;
     margin: 0;
     letter-spacing: 0.15em;
-    animation: typing 0.75s steps(4, end), blink-caret 0.75s step-end 1,
+    animation: typing 2s steps(18, end), blink-caret 1s step-end 3,
         pulse 5s infinite;
 }
 
@@ -354,7 +354,7 @@ a {
         width: 0;
     }
     to {
-        width: 30%;
+        width: 100%;
     }
 }
 
@@ -363,7 +363,7 @@ a {
     to {
         border-color: rgb(255, 255, 255);
     }
-    100% {
+    50% {
         border-color: transparent;
     }
 }
@@ -432,7 +432,6 @@ a {
 }
 
 .splashtext3 {
-    margin-left: -2%;
     letter-spacing: 0.15em;
     animation: pulse3 5s infinite;
 }
@@ -781,6 +780,19 @@ a {
     margin-left: 0;
     min-height: 40vh;
     padding-top: 2%;
+    background: #32717f;
+    color: white;
+    padding: 1% 2% 1% 2%;
+    width: 30%;
+    height: auto;
+    font-family: "Josefin Sans";
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px #0f434a;
+    z-index: 0;
+}
+
+.formBox p {
+    font-size: 1.2rem;
 }
 
 .skillText {

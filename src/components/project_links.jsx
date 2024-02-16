@@ -210,9 +210,6 @@ function ProjectLinks() {
     return (
         <>
             <div className="headerbox">
-                <div className="miniLogoOuter">
-                    <img className="miniLogo" src={ashLogo} alt="logo" />
-                </div>
                 <div className="splashtext3">
                     <h1>Projects</h1> 
                 </div>

@@ -28,15 +28,12 @@ export const Feedback = () => {
     return (
         <>
             <div className="headerbox">
-                <div className="miniLogoOuter">
-                    <img className="miniLogo" src={ashLogo} alt="logo" />
-                </div>
                 <div className="splashtext3">
                     <h1>Contact Me</h1>
                 </div>
             </div>
             <div className="feedbackBox">
-                <div className="splashbox formBox">
+                <div className="formBox">
                     <p className="feedbackShpiel">
                         Thanks for visiting my portfolio page! I hope to expand
                         it further in the future- if you're interested in

@@ -4,13 +4,10 @@ import me from "../images/me.jpg"
 import ashLogo from "../images/ash-logo.png"
 
 function AboutMe(){
-    const listItems3 = [<Link><h1>Writing Samples</h1></Link>, <Link><h1>Art Gallery</h1></Link>, <Link><h1>Music Player</h1></Link>]
+    // const listItems3 = [<Link><h1>Writing Samples</h1></Link>, <Link><h1>Art Gallery</h1></Link>, <Link><h1>Music Player</h1></Link>]
     return (
         <>
             <div className="headerbox">
-                <div className="miniLogoOuter">
-                    <img className="miniLogo" src={ashLogo} alt="logo" />
-                </div>
                 <div className="splashtext3">
                     <h1>About Me</h1> 
                 </div>
@@ -33,10 +30,10 @@ function AboutMe(){
                             (If you think my cat, Roo, is adorable, click on her for more pics!)</p>
                     </div>
                     <div className="rooBox">
-                        <Link><img className="roopic" src={roo} alt="Click this picture of my cat for more pictures of my cat!" /></Link>
+                        <img className="roopic" src={roo} alt="Click this picture of my cat for more pictures of my cat!" />
                     </div>
                 </div>
-                <div className="aboutMeRow2">
+                {/* <div className="aboutMeRow2">
                     <div className="linklist">
                         <ul className="linklistRow1">
                             {listItems3.map((item, idx) => (
@@ -44,7 +41,7 @@ function AboutMe(){
                             ))}
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

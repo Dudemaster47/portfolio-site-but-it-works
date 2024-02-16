@@ -100,19 +100,19 @@ function Nav() {
                     Home
                     </NavLink>
                 </li>
-                <li id="B" className={isActive2 ? "activeNavbutton" : "navbutton"} onClick={clickHandler2}>
-                    <NavLink to='/aboutme' exact={true} activeClassName='active'>
-                    About Me
-                    </NavLink>
-                </li>
                 <li id="C" className={isActive3 ? "activeNavbutton" : "navbutton"} onClick={clickHandler3}>
                     <NavLink to='/skills' exact={true} activeClassName='active'>
-                    Skills
+                    Resume & Skills
                     </NavLink>
                 </li>
                 <li id="D" className={isActive4 ? "activeNavbutton" : "navbutton"} onClick={clickHandler4}>
                     <NavLink to='/projects' exact={true} activeClassName='active'> 
                     Projects
+                    </NavLink>
+                </li>
+                <li id="B" className={isActive2 ? "activeNavbutton" : "navbutton"} onClick={clickHandler2}>
+                    <NavLink to='/aboutme' exact={true} activeClassName='active'>
+                    About Me
                     </NavLink>
                 </li>
                 <li id="E" className={isActive5 ? "activeNavbutton" : "navbutton"} onClick={clickHandler5}>
