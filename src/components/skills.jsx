@@ -1,6 +1,6 @@
 import ashLogo from "../images/ash-logo.png";
 import "./skills.css";
-import ashresume from "../images/ashresume.pdf";
+import ashresume from "../images/AHresume.pdf";
 
 function Skills() {
     //gotta overhaul this anyway so
