@@ -10,7 +10,7 @@ export const Feedback = () => {
 
         emailjs
             .sendForm(
-                "contact_service",
+                "service_34ffhff",
                 "template_a7efzwo",
                 form.current,
                 "upzXRB1xcGlkey4qB"
