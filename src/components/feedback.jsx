@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import ashLogo from "../images/ash-logo.png";
 
 export const Feedback = () => {
     const form = useRef();

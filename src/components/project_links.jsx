@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "./modal.jsx";
 import Slider from "./slider.jsx";
-import { Link } from "react-router-dom";
+
 import homecookedSplash from "../images/homecooked splash.png";
 import homecookedProfile from "../images/homecooked profile.png";
 import homecookedShop from "../images/homecooked shop.png";
@@ -14,7 +14,7 @@ import blackjackStart from "../images/blackjack start.png";
 import blackjackBet from "../images/blackjack betting.png";
 import blackjackCommands from "../images/blackjack commands.png";
 import blackjackEnd from "../images/blackjack end.png";
-import ashLogo from "../images/ash-logo.png"
+
 
 function ProjectLinks() {
     // const [p1Open, setp1Open] = useState(false);

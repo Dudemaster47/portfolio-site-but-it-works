@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import ashLogo from "../images/ash-logo.png"
-import ashresume from "../images/ashresume.pdf";
 
 function Splash(){
     const listItems1 = [<Link to='/skills' exact={true}><h1>Skills</h1></Link>, <Link to='/projects' exact={true}><h1>Projects</h1></Link>]
