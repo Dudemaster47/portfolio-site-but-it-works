@@ -26,11 +26,10 @@ function AboutMe(){
                             In the meantime, I'm always looking for some new project to funnel my endless creative energy into.
                             It can be hard to balance so many outlets, but I find a way!
                             If I had to say where my talents lie, it'd probably be front end programming and design.
-                            UI/UX design is fun, and a passion of mine. But I'm just as capable on the back end. Full stack, baby!
-                            (If you think my cat, Roo, is adorable, click on her for more pics!)</p>
+                            UI/UX design is fun, and a passion of mine. But I'm just as capable on the back end. Full stack, baby!</p>
                     </div>
                     <div className="rooBox">
-                        <img className="roopic" src={roo} alt="Click this picture of my cat for more pictures of my cat!" />
+                        <img className="roopic" src={roo} alt="Click this picture of my cat for more pictures of my cat! COMING SOON." />
                     </div>
                 </div>
                 {/* <div className="aboutMeRow2">
