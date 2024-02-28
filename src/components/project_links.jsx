@@ -115,8 +115,8 @@ function ProjectLinks() {
             image_url: `${cardGameHelp}`,
             caption: "Card Games!! Help Page",
             body: `Coding highlights included:\n
-            - It turns out using React Redux and simple Javascript to make a web-based video game, even a simple one, is actually very difficult\n
-            - The tools that React has to dynamically update webpages do not play well with things that need to update multiple times within a single function. The entire game is almost all javascript being used to update numerous variables almost constantly before feeding the final results into the React framework.\n
+            - Using React Redux and simple Javascript to make a web-based video game, even a simple one, is actually very difficult\n
+            - The hooks that React has to dynamically update webpages do not play well with things that need to update multiple times within a single function. The entire game is almost all javascript being used to update numerous variables almost constantly before feeding the final results into the React framework.\n
             - The fact that it is fully functional and bug-free is a massive accomplishment of software engineering. And perseverence.`,
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
@@ -125,10 +125,10 @@ function ProjectLinks() {
             image_url: `${cardGameGame}`,
             caption: "Card Games!! Game Page",
             body: `Challenges included:\n
-            - REACT REDUX IS THE WRONG FRAMEWORK FOR DESIGNING GAMES\n
-            - Ultimately this project did not reach the level I wanted it to because it became far too cumbersome to expand it further than the single player experience due to the above reason\n
-            - Other desired features would have required an almost total overhaul of much of the back end\n
-            - Honestly if I were to revisit this, I would in fact start entirely from scratch and have the game be its own, separate program hosted by the app rather than built into it.`,
+            - React Redux's various hooks do not update multiple times within singular function, requiring the actual functionality to be purely javascript based while increasing complexity to adapt the web page\n
+            - The increased complexity significantly extended necessary bugfixing and slowed progress significantly\n
+            - The single player mode was intended to be a proof of concept, but was ultimately all that could be completed within the timeframe provided\n
+            - In spite of the difficulties, producing a functional single-player game was a massive accomplishment, and I am proud of what I have accomplished`,
             link: "https://card-games.onrender.com/",
             gitLink: "https://github.com/Dudemaster47/Card-Game-Capstone"
         }
@@ -166,9 +166,9 @@ function ProjectLinks() {
             image_url: `${blackjackEnd}`,
             caption: "Blackjack End Ascii",
             body: `Challenges included:\n
-            - Most of this was done solo\n
-            - The game is fairly complex and prompt-based with branching outcomes, making the code itself difficult to read\n
-            - It broke inexplicably after not having been touched for several months, requiring an unexpected bugfix.`,
+            - This was my first major project and I was the project lead\n
+            - The game is fairly complex and prompt-based with branching outcomes\n
+            - The Dealer's intial logic proved unstable, requiring a quick review and bugfix long after the project was originally completed`,
             link: "null",
             gitLink: "https://github.com/Dudemaster47/blackjack2"
         }
